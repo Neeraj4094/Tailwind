@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+<body class="px-2 grid grid-cols-2 place-item-center">
+    <div class="signin gap-2   flex items-center justify-center">
+        <div class="login">
+        <div class="svg py-6 px-2">
+        <svg class="w-12 h-12 text-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path d="M7.5 2.5c-1.026 0-1.908.277-2.6.87-.688.59-1.137 1.447-1.387 2.516a.5.5 0 00.897.4c.316-.452.632-.723.936-.863.294-.135.611-.162.975-.065.366.098.65.386 1.095.87l.015.016c.336.365.745.81 1.305 1.156.582.359 1.305.6 2.264.6 1.026 0 1.908-.277 2.6-.87.688-.59 1.138-1.447 1.387-2.516a.5.5 0 00-.897-.4c-.316.452-.632.723-.936.863-.294.135-.611.162-.975.065-.366-.098-.65-.386-1.095-.87l-.015-.016c-.336-.365-.745-.81-1.305-1.156-.582-.359-1.305-.6-2.264-.6zM4 7c-1.026 0-1.908.277-2.6.87C.712 8.46.263 9.317.013 10.386a.5.5 0 00.897.4c.316-.452.632-.723.936-.863.294-.135.611-.162.975-.065.366.098.65.386 1.095.87l.015.016c.336.365.745.81 1.305 1.156.582.359 1.305.6 2.264.6 1.026 0 1.908-.277 2.6-.87.688-.59 1.138-1.447 1.387-2.516a.5.5 0 00-.897-.4c-.316.452-.632.723-.936.863-.294.135-.611.162-.975.065-.366-.098-.65-.386-1.095-.87l-.015-.016c-.335-.365-.745-.81-1.305-1.156C5.682 7.24 4.959 7 4 7z" fill="currentColor"></path></svg>
+        </div>
+        <h1 class="font-bold text-2xl px-1">Sign In to your account</h1>
+        <div class="start flex pt-4">
+        <p class="text-lg text-slate-500">Not a Member?</p>
+        <p class="px-2 font-semibold text-blue-800"> Start a 14 day free trial</p>
+        </div>
+        <form class="pt-4 px-1 flex flex-col ">
+            <label for="email" class="px-1 py-2">Email address</label><input type="email" id="email" class=" email active:outline-violet-700 border border-slate-500 rounded-md px-2 py-1" >
+            <label for="Password" class="px-1 py-2">Password</label><input type="password" id="password" class="password active:outline-violet-700 border border-slate-500 rounded-md px-2 py-1">
+            <div class="remember flex justify-between py-6">
+                <div class="rem">
+                <input type="checkbox" id="remember" class="remember focus:bg-blue-500 active:outline-violet-700" ><label for="remember" class="px-2 ">Remember me</label>
+                </div>
+                <a href="#"><p class="text-blue-800 font-semibold">Forget Password?</p></a>
+            </div>
+            <button class="border rounded-md py-1 bg-blue-800 text-white hover:bg-slate-500">Sign In</button>
+        </form>
+
+        <div class="or text-center py-6">
+            <div class="border relative top-5"></div>
+            <p>Or continue with</p>
+            <!-- <div class="border"></div> -->
+        </div>
+        <div class="btn flex items-center justify-center py-4 gap-2">
+        <button class="border rounded-md py-1 px-8 bg-blue-800 text-white flex gap-2 items-center">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+              </svg>
+            <p>Twitter</p></button>
+        <button class="border rounded-md py-1 px-8 bg-black text-white flex gap-2 items-center">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+              </svg>
+            <p>Github</p></button>
+            </div>
+        
+        </div>
+    </div>
+    <div class="signinimage">
+        <img src="/Image/Balloon.jpg" alt="" class="w-auto h-screen">
+    </div>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="h-screen w-full flex items-center justify-center relative">
+        <form class="absolute left-10 top-10 peer">
+            <div class="py-10 w-full h-full">
+                <label for="toogle1" class="px-14 py-4 relative bg-blue-800 rounded-full">
+                    <input type="checkbox" name="toogle1" id="toogle1" class="peer" hidden>
+                    <span class="w-9 h-9 absolute top-2 left-2 bg-slate-100 rounded-full peer-checked:left-16"> </span>
+                </label>
+            </div>
+        </form>
+        <input type="checkbox" id="check1" class="peer" hidden>
+        <label for="check1" class="absolute left-10 top-40 w-28 h-14 bg-purple-600 rounded-full">
+        </label>
+        <input type="checkbox" name="check2" id="check2" class="peer" hidden>
+        <label for="check1"
+            class="w-8 h-8 bg-slate-900 rounded-full absolute left-12 top-44 peer-checked:left-24 z-10"></label>
+        <section
+            class="w-full h-full px-4 py-6 max-w-sm border  flex-col items-center absolute right-0 overflow-auto hidden peer-checked:block">
+            <div class="px-2 py-2">
+                <img src="/Image/Balloon.jpg" alt="Main Image" width="100%" height="100%"
+                    class=" object-cover rounded-lg">
+                <div class="flex justify-between items-center relative text-slate-500">
+                    <div class="wfull py-2">
+                        <h2 class="font-bold text-xl text-black">IMG_4985.HEIC</h2>
+                        <span>3.9MB</span>
+                    </div>
+                    <button
+                        class=" rounded-full relative focus:outline-none focus:ring-2 hover:bg-slate-100 focus:ring-blue-600 p-2">
+                        <a href="#" class="absolute z-10 inset-0"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true" class="w-6 h-6 ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z">
+                            </path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <div class="py-2 px-2 flex flex-col w-full">
+                <ul>
+                    <li class="border-b py-1 font-semibold text-lg">Information</li>
+                    <li class="py-3  border-b">
+                        <div class="flex justify-between">
+                            <p>Uploaded by</p>
+                            <h3 class="font-medium">Marie Culver</h3>
+                        </div>
+                    </li>
+                    <li class="py-3  border-b text-slate-500">
+                        <div class="flex justify-between">
+                            <p>Uploaded by</p>
+                            <span class="text-black">June 8, 2020</span>
+                        </div>
+                    </li>
+                    <li class="py-3  border-b text-slate-500">
+                        <div class="flex justify-between">
+                            <p>Uploaded by</p>
+                            <span class="text-black">June 8, 2020</span>
+                        </div>
+                    </li>
+                    <li class="py-3  border-b text-slate-500">
+                        <div class="flex justify-between">
+                            <p>Uploaded by</p>
+                            <span class="text-black">June 8, 2020</span>
+                        </div>
+                    </li>
+                    <li class="py-3  border-b text-slate-500">
+                        <div class="flex justify-between">
+                            <p>Uploaded by</p>
+                            <span class="text-black">June 8, 2020</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="px-2 py-2 w-full">
+                <h3 class="font-medium text-lg">Description</h3>
+                <div class="flex justify-between items-center py-2 text-slate-500">
+                    <p>Add a description to this image.</p>
+                    <button
+                        class=" rounded-full relative focus:outline-none focus:ring-2 hover:bg-slate-100 focus:ring-blue-600 p-2">
+                        <a href="#" class="absolute z-10 inset-0"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="w-6 h-6 ">
+                            <path
+                                d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col w-full px-2">
+                <div class="py-3 border-b">
+                    <h3>Shared with</h3>
+                </div>
+                <div class="flex justify-between items-center py-">
+                    <div class="flex items-center gap-4 py-3 border-b">
+                        <img src="/Image/Balloon.jpg" alt="" class="h-8 w-8 rounded-full">
+                        <h3 class="font-medium text-base">Aimee Douglas</h3>
+                    </div>
+                    <a href="#" class="text-blue-800 font-medium">Remove</a>
+                </div>
+                <div class="flex justify-between items-center py-">
+                    <div class="flex items-center gap-4 py-3 border-b">
+                        <img src="/Image/Balloon.jpg" alt="" class="h-8 w-8 rounded-full">
+                        <h3 class="font-medium text-base">Andrea McMillan</h3>
+                    </div>
+                    <a href="#" class="text-blue-800 font-medium">Remove</a>
+                </div>
+                <div class="flex items-center gap-4 py-1 border-b">
+                    <div class="p-1">
+                        <span
+                            class="border-2 px-2 flex items-center justify-center text-slate-500 bg-slate-50 text-3xl rounded-full border-dashed">+</span>
+                    </div>
+                    <a href="#" class="text-blue-800 font-medium">Share</a>
+                </div>
+                <div class="px-2 grid grid-cols-2 py-4 gap-3">
+                    <a href="#" class="border-2  text-center py-2 rounded-lg bg-blue-800 text-white">Download</a>
+                    <a href="#" class="border-2 text-center py-2 rounded-lg">Delete</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <section class="h-screen w-full px-4  py-6 bg-slate-950 text-slate-50">
+        <div class="border w-full h-full">
+            <div class="flex items-center gap-2 w-full border-b pb-8 px-2 py-4">
+                <div class="outline-1 outline-slate-400">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M19 11H1a1 1 0 010-2h18a1 1 0 110 2zm0-7H1a1 1 0 010-2h18a1 1 0 110 2zm0 14H1a1 1 0 010-2h18a1 1 0 010 2z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center w-full relative ">
+                    <div class="rounded-l-xl border-r-0 flex absolute left-2">
+                        <svg class="w-5 h-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 w-full">
+                        <input type="search" id="search" class="py-2 px-10 border rounded-xl outline-none w-full"
+                            placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full h-full">
+                <div class="flex-1 w-full h-full overflow-auto">
+                    <div class="flex py-6 justify-between border-b px-4">
+                        <h1 class="font-bold text-xl">Deployment</h1>
+                        <div class="flex gap-2">
+                            <span>Sort by</span>
+                            <div class="">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M10.1025513,7.22165154 C13.549533,10.6902823 15.8466074,12.9862104 16.9937744,14.109436 C17.1906416,14.2940129 17.5317688,14.6698914 18.0392151,14.1790161 C18.3775126,13.851766 18.3644409,13.4939982 18,13.1057129 L10.556488,5.67610168 C10.432251,5.55870056 10.2805653,5.5 10.1014311,5.5 C9.92229687,5.5 9.76473264,5.55870056 9.6287384,5.67610168 L2.17555237,13.3108978 C1.93475791,13.6991321 1.94470649,14.025777 2.20539811,14.2908324 C2.46608974,14.5558878 2.78324382,14.5701396 3.15686035,14.3335876 L10.1025513,7.22165154 Z">
+                                    </path>
+                                </svg>
+                                <svg class="w-4 h-4 -my-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill="currentColor"
+                                        d="M10.1025513,12.7783485 L16.8106554,6.0794438 C17.0871744,5.80330401 17.5303978,5.80851813 17.8006227,6.09108986 C18.0708475,6.37366159 18.0657451,6.82658676 17.7892261,7.10272655 L10.5858152,14.2962587 C10.3114043,14.5702933 9.87226896,14.5675493 9.60115804,14.2901058 L2.2046872,6.72087106 C1.93149355,6.44129625 1.93181183,5.98834118 2.20539811,5.7091676 C2.47898439,5.42999401 2.92223711,5.43031926 3.19543076,5.70989407 L10.1025513,12.7783485 Z">
+                                    </path>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="flex flex-col items-center justify-between w-full h-full ">
+                            <div class="flex justify-between w-full py-4 px-4 border-b">
+                                <div class="px-1 space-y-4">
+                                    <div class="flex gap-3 items-center">
+                                        <span
+                                            class="w-2 h-2 rounded-full bg-slate-600 shadow-2xl ring-4 ring-slate-800 ring-offset-0"></span>
+                                        <div class="flex gap-2 items-center">
+                                            <span class="font-semibold text-lg">Planetaria</span>
+                                            <span class="text-slate-400">/</span>
+                                            <span class="font-semibold text-lg">ios-app</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <p>Deploys from Github</p>
+                                        <span>.</span>
+                                        <p><span>Initiated</span> <time>1m 32s</time> <span>ago</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-2 border-2 bg-slate-800 rounded-full grid place-items-center">Preview</span>
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.05307007,2.15808105 L14.2962587,9.41418482 C14.4320862,9.5496827 14.5,9.71077067 14.5,9.89744874 C14.5,10.0841268 14.4320862,10.2497803 14.2962587,10.3944092 C11.6760845,12.9498393 9.15095523,15.4168071 6.72087106,17.7953128 C6.5962677,17.912323 6.09560574,18.2032928 5.70989407,17.7705688 C5.3241824,17.3378448 5.55848694,16.9602509 5.70989407,16.8045692 C7.97174895,14.594209 10.3279004,12.2918355 12.7783485,9.89744874 L6.03100586,3.13816833 C5.78524099,2.79925826 5.80526899,2.48632792 6.09108986,2.19937732 C6.37691073,1.91242672 6.6975708,1.8986613 7.05307007,2.15808105 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex justify-between  w-full py-4 px-4 border-b">
+                                <div class="px-1 space-y-4">
+                                    <div class="flex gap-3 items-center">
+                                        <span
+                                            class="w-2 h-2 rounded-full bg-green-600 shadow-2xl ring-4 ring-green-800 ring-offset-0"></span>
+                                        <div class="flex gap-2 items-center">
+                                            <span class="font-semibold text-lg">Planetaria</span>
+                                            <span class="text-slate-400">/</span>
+                                            <span class="font-semibold text-lg">ios-app</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <p>Deploys from Github</p>
+                                        <span>.</span>
+                                        <p><span>Initiated</span> <time>1m 32s</time> <span>ago</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-2 border-2 bg-slate-800 rounded-full grid place-items-center">Preview</span>
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.05307007,2.15808105 L14.2962587,9.41418482 C14.4320862,9.5496827 14.5,9.71077067 14.5,9.89744874 C14.5,10.0841268 14.4320862,10.2497803 14.2962587,10.3944092 C11.6760845,12.9498393 9.15095523,15.4168071 6.72087106,17.7953128 C6.5962677,17.912323 6.09560574,18.2032928 5.70989407,17.7705688 C5.3241824,17.3378448 5.55848694,16.9602509 5.70989407,16.8045692 C7.97174895,14.594209 10.3279004,12.2918355 12.7783485,9.89744874 L6.03100586,3.13816833 C5.78524099,2.79925826 5.80526899,2.48632792 6.09108986,2.19937732 C6.37691073,1.91242672 6.6975708,1.8986613 7.05307007,2.15808105 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex justify-between w-full py-4 px-4 border-b">
+                                <div class="px-1 space-y-4">
+                                    <div class="flex gap-3 items-center">
+                                        <span
+                                            class="w-2 h-2 rounded-full bg-slate-600 shadow-2xl ring-4 ring-slate-800 ring-offset-0"></span>
+                                        <div class="flex gap-2 items-center">
+                                            <span class="font-semibold text-lg">Planetaria</span>
+                                            <span class="text-slate-400">/</span>
+                                            <span class="font-semibold text-lg">ios-app</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <p>Deploys from Github</p>
+                                        <span>.</span>
+                                        <p><span>Initiated</span> <time>1m 32s</time> <span>ago</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-2 border-2 bg-slate-800 rounded-full grid place-items-center">Preview</span>
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.05307007,2.15808105 L14.2962587,9.41418482 C14.4320862,9.5496827 14.5,9.71077067 14.5,9.89744874 C14.5,10.0841268 14.4320862,10.2497803 14.2962587,10.3944092 C11.6760845,12.9498393 9.15095523,15.4168071 6.72087106,17.7953128 C6.5962677,17.912323 6.09560574,18.2032928 5.70989407,17.7705688 C5.3241824,17.3378448 5.55848694,16.9602509 5.70989407,16.8045692 C7.97174895,14.594209 10.3279004,12.2918355 12.7783485,9.89744874 L6.03100586,3.13816833 C5.78524099,2.79925826 5.80526899,2.48632792 6.09108986,2.19937732 C6.37691073,1.91242672 6.6975708,1.8986613 7.05307007,2.15808105 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- <div class="flex justify-between  w-full py-4 px-4 border-b">
+                                <div class="px-1 space-y-4">
+                                    <div class="flex gap-3 items-center">
+                                        <span
+                                            class="w-2 h-2 rounded-full bg-green-600 shadow-2xl ring-4 ring-green-800 ring-offset-0"></span>
+                                        <div class="flex gap-2 items-center">
+                                            <span class="font-semibold text-lg">Planetaria</span>
+                                            <span class="text-slate-400">/</span>
+                                            <span class="font-semibold text-lg">ios-app</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <p>Deploys from Github</p>
+                                        <span>.</span>
+                                        <p><span>Initiated</span> <time>1m 32s</time> <span>ago</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-2 border-2 bg-slate-800 rounded-full grid place-items-center">Preview</span>
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M7.05307007,2.15808105 L14.2962587,9.41418482 C14.4320862,9.5496827 14.5,9.71077067 14.5,9.89744874 C14.5,10.0841268 14.4320862,10.2497803 14.2962587,10.3944092 C11.6760845,12.9498393 9.15095523,15.4168071 6.72087106,17.7953128 C6.5962677,17.912323 6.09560574,18.2032928 5.70989407,17.7705688 C5.3241824,17.3378448 5.55848694,16.9602509 5.70989407,16.8045692 C7.97174895,14.594209 10.3279004,12.2918355 12.7783485,9.89744874 L6.03100586,3.13816833 C5.78524099,2.79925826 5.80526899,2.48632792 6.09108986,2.19937732 C6.37691073,1.91242672 6.6975708,1.8986613 7.05307007,2.15808105 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-96 overflow-auto border h-full">
+                    <div class="flex py-6 justify-between border-b px-4 w-full">
+                        <h1 class="font-bold text-xl">Activity Feed</h1>
+                        <div class="flex gap-2">
+                            <span class="text-blue-800 font-medium">View All</span>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="grid w-full py-4 px-4 border-b gap-3">
+                            <div class="flex w-full justify-between items-center">
+                                <div class="flex gap-2 items-center">
+                                    <img src="/Image/Balloon.jpg" alt="User1" class="w-8 h-8 rounded-full ">
+                                    <span class="font-semibold text-lg">Michael Foster</span>
+                                </div>
+                                <span class="text-slate-400 text-sm">1h</span>
+                            </div>
+                            <span class="text-slate-400 text-sm">Pushed to <b>ios-app</b> (<b>2d89f0c8</b> on
+                                <b>main</b>)</span>
+                        </div>
+                        <div class="grid w-full py-4 px-4 border-b gap-3">
+                            <div class="flex w-full justify-between items-center">
+                                <div class="flex gap-2 items-center">
+                                    <img src="/Image/Balloon.jpg" alt="User1" class="w-8 h-8 rounded-full ">
+                                    <span class="font-semibold text-lg">Michael Foster</span>
+                                </div>
+                                <span class="text-slate-400 text-sm">1h</span>
+                            </div>
+                            <span class="text-slate-400 text-sm">Pushed to <b>ios-app</b> (<b>2d89f0c8</b> on
+                                <b>main</b>)</span>
+                        </div>
+                        <div class="grid w-full py-4 px-4 border-b gap-3">
+                            <div class="flex w-full justify-between items-center">
+                                <div class="flex gap-2 items-center">
+                                    <img src="/Image/Balloon.jpg" alt="User1" class="w-8 h-8 rounded-full ">
+                                    <span class="font-semibold text-lg">Michael Foster</span>
+                                </div>
+                                <span class="text-slate-400 text-sm">1h</span>
+                            </div>
+                            <span class="text-slate-400 text-sm">Pushed to <b>ios-app</b> (<b>2d89f0c8</b> on
+                                <b>main</b>)</span>
+                        </div>
+
+                        <div class="grid w-full py-4 px-4 border-b gap-3">
+                            <div class="flex w-full justify-between items-center">
+                                <div class="flex gap-2 items-center">
+                                    <img src="/Image/Balloon.jpg" alt="User1" class="w-8 h-8 rounded-full ">
+                                    <span class="font-semibold text-lg">Michael Foster</span>
+                                </div>
+                                <span class="text-slate-400 text-sm">1h</span>
+                            </div>
+                            <span class="text-slate-400 text-sm">Pushed to <b>ios-app</b> (<b>2d89f0c8</b> on
+                                <b>main</b>)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Screen -->
+    <section class="h-screen w-full  py-6">
+        <header class=" px-4 w-full h-auto">
+            <div class="w-full h-auto flex items-center gap-2">
+                <div class="py-1">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <g id="Menu / Hamburger_LG">
+                            <path id="Vector" d="M3 17H21M3 12H21M3 7H21" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+                <form class="w-full flex">
+                    <div class=" relative">
+                        <svg class="w-6 h-6 absolute left-4 top-2 " xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="search" class="px-14 py-2 w-full flex-1 outline-none border rounded-xl"
+                        placeholder="Search...">
+                </form>
+            </div>
+            <nav class="py-4">
+                <ul class="flex w-full font-medium gap-10 py-4">
+                    <li class="text-blue-800">Overview</li>
+                    <li>Activity</li>
+                    <li>Settings</li>
+                    <li>Collaborators</li>
+                    <li>Notifications</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="py-4">
+            <div class="flex py-8 justify-between items-center border px-4">
+                <div class=" space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-2 h-2 bg-green-600 ring-4 ring-offset-0 ring-green-100 rounded-full"></div>
+                        <div class="text-lg font-semibold">Planetaria</div>
+                        <div class="text-slate-400">/</div>
+                        <div class="text-lg font-semibold">mobile-api</div>
+                    </div>
+                    <p class="text-sm font-medium text-slate-500">Deploys from GitHub via main branch</p>
+                </div>
+                <div class="px-1 border bg-purple-100 rounded-xl ">Production</div>
+            </div>
+            <div class="px-4 grid grid-cols-4 border py-4">
+                <div class="py-2 space-y-2 grid">
+                    <h2 class="text-slate-500 font-medium">Number of deploys</h2>
+                    <span class="text-3xl font-bold">405</span>
+                </div>
+                <div class="py-2 space-y-2 grid">
+                    <h2 class="text-slate-500 font-medium">Average deploy time</h2>
+                    <span><time class="text-3xl font-bold">3.65 </time>mins</span>
+                </div>
+                <div class="py-2 space-y-2 grid">
+                    <h2 class="text-slate-500 font-medium">Number of servers</h2>
+                    <span class="text-3xl font-bold">5</span>
+                </div>
+                <div class="py-2 space-y-2 grid">
+                    <h2 class="text-slate-500 font-medium">Success rate</h2>
+                    <span class="text-3xl font-bold">95.08%</span>
+                </div>
+            </div>
+            <div class="py-2 px-4 space-y-6 grid border-t">
+                <span class="font-bold text-xl py-4">Latest Activity</span>
+                <!-- <ul class="flex justify-between font-semibold text-lg ">
+                    <li>User</li>
+                    <li>Commit</li>
+                    <li>Status</li>
+                    <li>Durtion</li>
+                    <li>Deployed at</li>
+                </ul> -->
+            </div>
+            <!-- <div class="px-4">
+                <ul class="flex justify-between items-center">
+                    <li>
+                        <div class="flex py-2 gap-2">
+                            <img src="/Image/Balloon.jpg" alt="User" class="w-8 h-8 rounded-full">
+                            <span class="font-bold text-lg">Michael Foster</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex gap-2">
+                            <span>2d89f0c8</span>
+                            <span class="px-1 border bg-slate-100 rounded-lg grid place-items-center">main</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex gap-2 items-center">
+                            <div class="w-2 h-2 bg-green-600 ring-4 ring-offset-0 ring-green-100 rounded-full"></div>
+                            <span class="font-medium ">Completed</span>
+                        </div>
+                    </li>
+                    <li>
+                        <time>25s</time>
+                    </li>
+                    <li>
+                        <div class="flex gap-2">
+                            <time>45</time>
+                            <span>minutes ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="px-4  w-full">
+                <table class="w-full border">
+                    <thead>
+                    <tr class="w-full border-b">
+                        <th class="py-4 text-lg text-left">User</th>
+                        <th class="py-4 text-lg text-center">Commit</th>
+                        <th class="py-4 text-lg">Status</th>
+                        <th class="py-4 text-lg">Duration</th>
+                        <th class="py-4 text-lg text-right">Deployed at</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="w-60 text-left">
+                                <div class="flex py-2 gap-2">
+                                    <img src="/Image/Balloon.jpg" alt="User" class="w-8 h-8 rounded-full">
+                                    <span class="font-semibold text-lg">Michael Foster</span>
+                                </div>
+                            </td>
+                            <td class="w-60 text-left">
+                                <div class="flex gap-2 justify-center items-end">
+                                    <span>2d89f0c8</span>
+                                    <span class="px-1 border bg-slate-100 rounded-lg grid place-items-center">main</span>
+                                </div>
+                            </td>
+                            <td class="w-60">
+                                <div class="flex gap-2 justify-center items-center">
+                                    <div class="w-2 h-2 bg-green-600 ring-4 ring-offset-0 ring-green-100 rounded-full"></div>
+                                    <span class="font-medium ">Completed</span>
+                                </div>
+                            </td>
+                            <td class="w-60 flex justify-center items-center">
+                                <time>25s</time>
+                            </td>
+                            <td class="w-60 ">
+                                <div class="flex gap-2 justify-end items-end">
+                                    <time>45</time>
+                                    <span>minutes ago</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

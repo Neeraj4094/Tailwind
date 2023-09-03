@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-col items-center justify-center w-full h-full bg-slate-100">
+        <div class="flex items-center justify-between w-full max-w-5xl gap-2 py-4 ">
+            <div class="flex-1 w-full max-w-sm">
+                <address class="flex items-center justify-between w-full ">
+                    <div class="flex gap-2">
+                        <svg class="w-4 h-4 hover:text-red-500" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span>digimedia@company.com</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                            </path>
+                        </svg>
+                        <span>1234567890</span>
+                    </div>
+                </address>
+            </div>
+
+            <div class="flex items-center justify-center gap-3">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                    </path>
+                </svg>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                    </path>
+                </svg>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                    </path>
+                </svg>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+                    </path>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="flex items-center justify-between w-full max-w-5xl gap-2 py-4 ">
+            <div class="flex-1">
+                <img src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/logo-v1.png" alt=""
+                    class="w-24 h-6">
+            </div>
+            <div class="flex gap-10">
+
+                <div class="flex items-center gap-16">
+                    <nav>
+                        <ul class="flex gap-10 text-sm font-medium">
+                            <li><a href="#" class="text-pink-400">Home</a></li>
+                            <li><a href="#" class=" text-slate-800 hover:text-pink-400">About</a></li>
+                            <li><a href="#" class=" text-slate-800 hover:text-pink-400">Services</a></li>
+                            <li><a href="#" class=" text-slate-800 hover:text-pink-400">Projects</a></li>
+                            <li><a href="#" class=" text-slate-800 hover:text-pink-400">Blog</a></li>
+                            <li><a href="#" class=" text-slate-800 hover:text-pink-400">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="px-4 py-2 border border-pink-500 text-pink-500 rounded-lg">Free Quote</button>
+            </div>
+        </div>
+    </div>
+    <section class="w-full h-full">
+        <div class="grid place-items-center w-full h-full py-6 space-y-40">
+            <div class=" w-full space-y-6 max-w-6xl">
+                <span class="text-lg font-bold text-blue-800">Our Portfolio</span>
+                <h2 class="font-bold text-3xl">See Our Recent <span class="text-blue-800">Projects</span></h2>
+                <div class="relative">
+                    <span class="w-12 h-1 bg-blue-600 absolute"> </span>
+                </div>
+            </div>
+            <div class="flex  gap-6 px-4 h-full">
+                <article class="space-y-3 border shadow rounded-2xl h-80 w-full">
+                    <img src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/portfolio-03.jpg"
+                        alt="" class="w-56 h-60 object-cover rounded-t-xl">
+                    <div class="flex flex-col items-center space-y-1">
+                        <h2 class="font-bold text-lg">Website Builder</h2>
+                        <span class="text-slate-400 text-sm">Marketing</span>
+                    </div>
+                </article>
+                <article class="space-y-3 border shadow rounded-2xl h-80 w-full">
+                    <img src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/portfolio-01.jpg"
+                        alt="" class="w-56 h-60 object-cover rounded-t-xl">
+                    <div class="flex flex-col items-center space-y-1">
+                        <h2 class="font-bold text-lg">Website Builder</h2>
+                        <span class="text-slate-400 text-sm">Marketing</span>
+                    </div>
+                </article>
+                <article class="space-y-3 border shadow rounded-2xl h-80 w-full">
+                    <img src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/portfolio-03.jpg"
+                        alt="" class="w-56 h-60 object-cover rounded-t-xl">
+                    <div class="flex flex-col items-center space-y-1">
+                        <h2 class="font-bold text-lg">Website Builder</h2>
+                        <span class="text-slate-400 text-sm">Marketing</span>
+                    </div>
+                </article>
+                <article class="space-y-3 border shadow rounded-2xl h-80 w-full">
+                    <img src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/portfolio-01.jpg"
+                        alt="" class="w-56 h-60 object-cover rounded-t-xl">
+                    <div class="flex flex-col items-center space-y-1">
+                        <h2 class="font-bold text-lg">Website Builder</h2>
+                        <span class="text-slate-400 text-sm">Marketing</span>
+                    </div>
+                </article>
+                <article class="space-y-3 border shadow rounded-2xl h-80 w-full">
+                    <img src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/portfolio-03.jpg"
+                        alt="" class="w-56 h-60 object-cover rounded-t-xl">
+                    <div class="flex flex-col items-center space-y-1">
+                        <h2 class="font-bold text-lg">Website Builder</h2>
+                        <span class="text-slate-400 text-sm">Marketing</span>
+                    </div>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-screen">
+        <div class="grid place-items-center w-full h-full space-y-10">
+            <div class="grid place-items-center w-full space-y-6 max-w-6xl">
+                <span class="text-lg font-bold text-blue-800">Our Portfolio</span>
+                <h2 class="font-bold text-3xl">See Our Recent <span class="text-blue-800">Projects</span></h2>
+                <div class="relative grid place-items-center">
+                    <span class="w-12 h-1 bg-blue-600 absolute"> </span>
+                </div>
+            </div>
+            <section class="w-full h-screen flex gap-2 max-w-6xl py-2">
+                <div class="flex-1 bg-slate-100 rounded-2xl ">
+                    <article class="w-full h-full space-y-4 pb-10">
+                        <img src="/Image/Balloon.jpg" alt="Img1" class="w-full h-3/5 rounded-t-2xl">
+                        <div class="flex items-center justify-between px-5">
+                            <span class="px-3 py-1 text-sm text-white bg-blue-800 rounded-xl">SEO Analysis</span>
+                            <date class="text-slate-400">06 August 2023</date>
+                        </div>
+                        <p class="font-bold px-5 text-xl">Lorem Ipsum Dolor Sit Amet, Consectetur Adelore Eiusmod Tempor
+                            Incididunt</p>
+                        <p class="text-sm text-slate-400 px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed doers itii eiumod deis tempor incididunt ut labore.</p>
+                        <div class="flex items-center justify-between px-5">
+                            <div class="flex items-center gap-2">
+                                <img src="/Image/Img1.jpg" alt="" class="w-8 h-8 rounded-full">
+                                <span class="text-sm">By: Andrea Mentuzi</span>
+                            </div>
+                            <button class="bg-white text-pink-500 border-pink-500 rounded-full px-4 py-2">Discover
+                                More</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="flex-1 bg-slate-100 rounded-2xl grid h-auto w-full">
+                    <article class="w-full h-auto  flex  items-center p-2 rounded-xl">
+                        <img src="/Image/Balloon.jpg" alt="" class="w-40 h-40 rounded-xl">
+                        <div class="px-2 space-y-2s">
+                            <div class="flex justify-between px-5 w-full">
+                                <span class="px-3 py-1 text-sm text-white bg-blue-800 rounded-xl">SEO Analysis</span>
+                                <date class="text-slate-400">06 August 2023</date>
+                            </div>
+                            <div class="w-full max-w-xs space-y-2">
+                                <p class="font-bold px-5 text-lg">Lorem Ipsum Dolor Sit Amet Incididunt</p>
+                                <p class="text-sm text-slate-400 px-5">Lorem ipsum dolor sit amet eiumod deis tempor
+                                    incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="w-full h-auto  flex  items-center p-2 rounded-xl">
+                        <img src="/Image/Balloon.jpg" alt="" class="w-40 h-40 rounded-xl">
+                        <div class="px-2 space-y-2s">
+                            <div class="flex justify-between px-5 w-full">
+                                <span class="px-3 py-1 text-sm text-white bg-blue-800 rounded-xl">SEO Analysis</span>
+                                <date class="text-slate-400">06 August 2023</date>
+                            </div>
+                            <div class="w-full max-w-xs space-y-2">
+                                <p class="font-bold px-5 text-lg">Lorem Ipsum Dolor Sit Amet Incididunt</p>
+                                <p class="text-sm text-slate-400 px-5">Lorem ipsum dolor sit amet eiumod deis tempor
+                                    incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="w-full h-auto flex  items-center p-2 rounded-xl">
+                        <img src="/Image/Balloon.jpg" alt="" class="w-40 h-40 rounded-xl">
+                        <div class="px-2 space-y-2s">
+                            <div class="flex justify-between px-5 w-full">
+                                <span class="px-3 py-1 text-sm text-white bg-blue-800 rounded-xl">SEO Analysis</span>
+                                <date class="text-slate-400">06 August 2023</date>
+                            </div>
+                            <div class="w-full max-w-xs space-y-2">
+                                <p class="font-bold px-5 text-lg">Lorem Ipsum Dolor Sit Amet Incididunt</p>
+                                <p class="text-sm text-slate-400 px-5">Lorem ipsum dolor sit amet eiumod deis tempor
+                                    incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="w-full h-screen mt-52">
+        <div class=" w-full h-full space-y-10">
+            <div class=" grid place-items-center w-full space-y-6 max-w-6xl">
+                <span class="text-lg font-bold text-blue-800 uppercase">Contact US</span>
+                <h2 class="font-bold text-3xl">Get In Touch With Us <span class="text-blue-800">Now</span></h2>
+                <div class="relative grid place-items-center">
+                    <span class="w-12 h-1 bg-blue-600 absolute"> </span>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full h-full py-6 px-5">
+                <div class="flex border w-full h-full rounded-xl max-w-6xl">
+                    <div class="flex w-2/5 h-full">
+                        <img src="/Image/Img1.jpg" alt="Login" class="w-full h-full object-cover rounded-l-xl">
+                    </div>
+                    <div class="px-2 flex-1 w-full items-center justify-center py-6">
+                        <div class="flex items-center justify-center w-full gap-5 px-12 ">
+                            <div class=" py-8 shadow-xl flex flex-col items-center justify-center border rounded-xl w-full">
+                                <div class="px-2 py-2 rounded-full bg-gradient-to-t from-pink-200 to-pink-50">
+                                    <svg class="w-5 h-5 text-pink-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>0100200340</span>
+                            </div>
+                            <div class=" py-8 shadow-xl flex flex-col items-center justify-center border rounded-xl w-full">
+                                <div class="px-2 py-2 rounded-full bg-gradient-to-t from-pink-200 to-pink-50">
+                                    <svg class="w-5 h-5 text-pink-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>0100200340</span>
+                            </div>
+                            <div class="  py-8 flex shadow-xl flex-col items-center justify-center border rounded-xl w-full">
+                                <div class="px-2 py-2 rounded-full bg-gradient-to-t from-pink-200 to-pink-50">
+                                    <svg class="w-5 h-5 text-pink-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>0100200340</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-center py-12">
+                        <form class="space-y-4">
+                            <div class="flex gap-3 py-2 ">
+                                <div class="flex flex-col  justify-between items-center">
+                                    <input type="text" name="name" id="name" placeholder="Name"
+                                        class="rounded-xl px-2 outline-none border py-2">
+                                    <input type="email" name="email" id="email" placeholder="Email"
+                                        class="rounded-xl py-1 px-2 outline-none border" py-2>
+                                    <input type="text" name="name" id="name" placeholder="Subject"
+                                        class="rounded-xl px-2 outline-none border py-2">
+                                </div>
+                                <textarea name="text" id="msg" cols="30" rows="8"
+                                    class="rounded-xl px-2 py-2 outline-none border"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <button
+                                class="text-pink-500 border border-pink-500 rounded-xl bg-slate-50 w-full py-2">Submit</button>
+                        </form>
+                        </div>
+                        <!-- <div class="flex flex-col w-full items-center justify-center">
+                            <div class="flex items-center justify-center gap-2 w-full">
+                                <div
+                                    class=" px-8 py-8 flex flex-col items-center justify-center border rounded-xl w-full">
+                                    <div class="px-2 py-2 rounded-full bg-gradient-to-t from-pink-200 to-pink-50">
+                                        <svg class="w-5 h-5 text-pink-500" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span>0100200340</span>
+                                </div>
+                                <div class=" px-8 py-8 flex flex-col items-center justify-center border rounded-xl">
+                                    <div class="px-2 py-2 rounded-full bg-gradient-to-t from-pink-200 to-pink-50">
+                                        <svg class="w-5 h-5 text-pink-500" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span>0100200340</span>
+                                </div>
+                                <div class=" px-8 py-8 flex flex-col items-center justify-center border rounded-xl">
+                                    <div class="px-2 py-2 rounded-full bg-gradient-to-t from-pink-200 to-pink-50">
+                                        <svg class="w-5 h-5 text-pink-500" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span>0100200340</span>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="flex gap-3 py-2 ">
+                                    <div class="flex flex-col  justify-between items-center">
+                                        <input type="text" name="name" id="name" placeholder="Name"
+                                            class="rounded-xl px-2 outline-none border py-2">
+                                        <input type="email" name="email" id="email" placeholder="Email"
+                                            class="rounded-xl py-1 px-2 outline-none border" py-2>
+                                        <input type="text" name="name" id="name" placeholder="Subject"
+                                            class="rounded-xl px-2 outline-none border py-2">
+                                    </div>
+                                    <textarea name="text" id="msg" cols="30" rows="8"
+                                        class="rounded-xl px-2 py-2 outline-none border"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <button
+                                    class="text-pink-500 border border-pink-500 rounded-xl bg-slate-50 w-full py-2">Submit</button>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="w-full h-screen px-4 py-2 grid place-items-center mt-40 bg-slate-900 text-white">
+        <div class="border px-4 rounded-xl w-full h-full  flex justify-center flex-col space-y-24">
+            <div class="px-2 w-full max-w-2xl space-y-6">
+            <h2 class="text-5xl font-bold">Support center</h2>
+            <p class="text-lg ">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+            </div>
+        
+        <div class="flex w-full  gap-10">
+            <div class="flex-1">
+                <div class="flex border rounded-xl items-start py-6 px-3">
+                    <div class="px-1 py-1">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path></svg>
+                    </div>
+                    <div class="px-2 w-full max-w-xs space-y-2">
+                        <h3 class="font-bold text-lg">Sales</h3>
+                        <p>Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="flex border rounded-xl items-start py-6 px-3">
+                    <div class="px-1 py-1">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path></svg>
+                    </div>
+                    <div class="px-2 w-full max-w-xs space-y-2">
+                        <h3 class="font-bold text-lg">Sales</h3>
+                        <p>Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="flex border rounded-xl items-start py-6 px-3">
+                    <div class="px-1 py-1">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path></svg>
+                    </div>
+                    <div class="px-2 w-full max-w-xs space-y-2">
+                        <h3 class="font-bold text-lg">Sales</h3>
+                        <p>Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="w-full h-screen px-4 py-6 ">
+        <div class="flex border rounded-xl px-6 py-8 w-full h-full relative bg-slate-900 isolate overflow-hidden">
+            <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+            <div class="flex-1 w-full h-full z-10 text-white">
+                <div class="flex flex-col  justify-center w-full h-full space-y-5">
+                    <h2 class="font-bold text-4xl w-full max-w-xl">Subscribe to our newsletter.</h2>
+                    <p class="w-full max-w-xl text-xl">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+                    <form class="w-full flex max-w-md gap-2">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="outline-none border text-slate-600 px-4 py-3 rounded-lg w-full">
+                        <button class="px-4 py-2 bg-blue-800 rounded-xl text-white">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex-1 w-full h-full z-10 text-white">
+                <div class="flex items-center justify-center w-full h-full">
+                <div class="px-2 space-y-3">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="currentColor"><path d="M960 95.888l-256.224.001V32.113c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76h-256v-63.76c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76H64c-35.344 0-64 28.656-64 64v800c0 35.343 28.656 64 64 64h896c35.344 0 64-28.657 64-64v-800c0-35.329-28.656-63.985-64-63.985zm0 863.985H64v-800h255.776v32.24c0 17.679 14.32 32 32 32s32-14.321 32-32v-32.224h256v32.24c0 17.68 14.32 32 32 32s32-14.32 32-32v-32.24H960v799.984zM736 511.888h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32zm0 255.984h64c17.664 0 32-14.32 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.696 14.336 32 32 32zm-192-128h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32zm0-255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm-256 0h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm0 255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32z"></path></svg>
+                    <h2 class="font-bold text-xl">Weekly articles</h2>
+                    <p class="text-lg">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</p>
+                </div>
+                <div class="px-2 space-y-3">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002"></path>
+                      </svg>
+                    <h2 class="font-bold text-xl">Weekly articles</h2>
+                    <p class="text-lg">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-full px-6 py-8">
+        <div class="flex w-full h-full items-center px-4 py-8 space-y-4 border bg-slate-900 rounded-xl text-white sm:block md:flex">
+            <div class="px-1 w-96 h-full flex items-center sm:w-full sm:h-80 sm:px-20 md:px-12 md:h-96 md:w-1/2 lg:w-96">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="Img1" class="w-full h-full sm:h-80 sm:w-full md:w-full lg:h-full lg:w-full xl:h-full rounded-xl border">
+            </div>
+            <div class="flex-1">
+            <div class="flex flex-col items-center justify-center w-full h-full">
+            <div class="px-4 space-y-5 w-full max-w-xl ">
+                <p class="text-2xl font-bold">Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.</p>
+                <div class="py-2 flex flex-col space-y-2">
+                <span class="text-xl font-bold">Judith Black</span>
+                <span class="text-base text-slate-400">CEO of Workcation</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="w-full h-full px-4 py-8">
+        <div class="grid place-items-center w-full h-full py-8">
+            <div class="px-2 flex justify-center items-center flex-col space-y-3">
+                <span class="text-lg text-blue-800 font-semibold">Testimonials</span>
+                <p class="text-4xl font-bold w-full max-w-xl text-center">We have worked with thousands of amazing people</p>
+            </div>
+            <div class="flex items-center justify-center w-full h-full py-10 gap-6 max-w-full flex-wrap">
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam. Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam. Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam. Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-12 h-12 border rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class="object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-8 w-full max-w-sm sm:max-w-full md:max-w-sm border rounded-xl py-6 space-y-4 bg-slate-100">
+                    <p><q>Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</q></p>
+                    <div class="flex gap-4 items-center">
+                        <div class="w-40 h-40 border-2 border-blue-800 rounded-full flex items-center justify-center">
+                        <img src="/Image/Img1.jpg" alt="User" width="100%" height="100%" class=" w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Leslie Alexander</h3>
+                        <span class="text-slate-500">@lesliealexander</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid place-items-center w-full h-full py-6 mt-52 bg-slate-100">
+            <span class="text-sm">Copyright © 2022 DigiMedia Co., Ltd. All Rights Reserved.</span>
+            <span class="text-xs">Design: TemplateMo</span>
+        </div>
+    </footer>
+</body>
+
+</html>

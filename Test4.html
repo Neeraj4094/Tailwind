@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-slate-900 text-white">
+    <header class="h-full w-full px-8 py-4">
+        <div class="flex items-center gap-4 border-b pb-6">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                <g id="Menu / Hamburger_LG">
+                    <path id="Vector" d="M3 17H21M3 12H21M3 7H21" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <div class="px-2 w-full">
+                <form class="w-full">
+                    <div class="flex relative w-full">
+                        <svg class="w-6 h-6 absolute left-2 top-2" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                            </path>
+                        </svg>
+                        <input type="search" class="py-2 outline-none border rounded-lg w-full px-10 flex-1 bg-slate-800 text-slate-50"
+                            placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav class="py-6 border-b">
+            <ul class="flex gap-12 font-medium ">
+                <li class="text-blue-800">Account</li>
+                <li>Notifications</li>
+                <li>Billing</li>
+                <li>Teams</li>
+                <li>Integrations</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="w-full h-full px-8">
+        <div class="w-full h-screen py-6 flex items-center gap-2 border-slate-500 border-b">
+            <div class="w-full max-w-sm h-full  space-y-2">
+                <h1 class="font-bold text-xl">Personal Information</h1>
+                <p class="w-full max-w-xs">Use a permanent address where you can receive mail.</p>
+            </div>
+
+            <div class="w-full h-full flex-1 px-8 ">
+                <form class="w-full h-full space-y-6 ">
+                    <div class="h-full w-full max-w-xl space-y-6">
+                        <div class="flex items-center gap-9">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User" width="100" height="100" class="object-cover rounded-lg">
+                            <div class="px-2 flex flex-col space-y-4">
+                                <button type="button" class=" p-2 rounded-lg bg-slate-800 px-2 text-white">Change Avatar</button>
+                                <span>JPG, GIF or PNG. 1MB max.</span>
+                            </div>
+                        </div>
+                        <div class="flex w-full gap-4 ">
+                            <div class="flex-1">
+                                <div class="flex flex-col gap-2">
+                                    <label for="name">First Name</label>
+                                    <input type="text" name="name" id="name" class="py-1 rounded-lg  bg-slate-800 px-2 text-white">
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex flex-col gap-2">
+                                    <label for="name1">Last Name</label>
+                                    <input type="text" name="name1" id="name1" class="py-1 rounded-lg  bg-slate-800 px-2 text-white">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" class="py-1 rounded-lg  bg-slate-800 px-2 text-white">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="name">Username</label>
+                            <input type="text" name="name" id="name" class="py-1 rounded-lg  bg-slate-800 px-2 text-white"
+                                placeholder="example.com/janesmith">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="name">Timezone</label>
+                            <select name="stdtime" id="stdtime" class="py-2 rounded-lg  bg-slate-800 px-2 text-white">
+                                <option value="time1">Pacific Standard Time</option>
+                                <option value="time1">Eastern Standard Time</option>
+                                <option value="time1">Greenwich Mean Time</option>
+                            </select>
+                        </div>
+                        <button class="bg-blue-800 rounded-lg px-6 py-1 ">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="w-full h-full py-10 flex gap-2 border-b border-slate-600">
+            <div class=" w-full max-w-sm h-full py-6 space-y-2">
+                <h1 class="font-bold text-xl">Change password</h1>
+                <p class="w-full max-w-xs">Update your password associated with your account.</p>
+            </div>
+
+            <div class="w-full h-full flex-1 py-6 px-8 ">
+                <form class="w-full h-full max-w-xl space-y-6">
+                    <div class="h-full w-full max-w-xl space-y-6">
+
+
+
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="password">Current password</label>
+                            <input type="password" name="password" id="password" class="py-1 rounded-lg bg-slate-800 text-slate-50 px-2">
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="password1">New password</label>
+                            <input type="password" name="password1" id="password1" class="py-1 rounded-lg bg-slate-800 text-slate-50 px-2">
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" name="password2" id="password2" class="py-1 rounded-lg bg-slate-800 text-slate-50 px-2">
+                        </div>
+
+
+                        <button class="bg-blue-800 rounded-lg px-6 py-1">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="w-full h-full py-4 flex gap-2 ">
+            <div class=" w-full max-w-sm h-full py-6 space-y-2">
+                <h1 class="font-bold text-xl">Delete account</h1>
+                <p class="w-full max-w-xs">No longer want to use our service? You can delete your account here. This action is not reversible. All information related to this account will be deleted permanently.</p>
+            </div>
+            <div class="w-full h-full flex-1 py-6 px-8 ">
+            <button class="px-3 py-1 border bg-red-500 text-slate-50 rounded-lg">Yes, delete my account</button>
+            </div>
+        </div>
+
+        <section class="w-full h-screen px-5 py-6 border grid place-items-center">
+            <div class=" space-y-4 w-full max-w-xl text-center">
+                <span class="text-lg font-semibold text-blue-800">Everything you need</span>
+                <h1 class="font-bold text-5xl">No server? No problem.</h1>
+                <p class="text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+            </div>
+            <div class="h-screen w-full py-8">
+                <div class="grid grid-cols-12 grid-rows-6 gap-1 w-full h-full">
+                    <aside class="col-span-2 row-span-6 bg-slate-50 rounded-lg text-black">
+                        <div class="flex justify-between w-full py-5 px-2">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="currentColor"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path></svg>
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+                              </svg>
+                        </div>
+                        <div class="grid px-3 text-slate-500 space-y-4">
+                            <span class="text-sm text-slate-400 pt-4">Navigation</span>
+                            <nav>
+                                <ul class="space-y-2 px-1">
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M0 4c0-1.1.9-2 2-2h7l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"></path></svg>
+                                            <span>Projects</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-2 text-slate-800">
+                                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M0 4c0-1.1.9-2 2-2h7l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"></path></svg>
+                                            <span>Deployments</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor"><path d="M923.767 256L0 789.321v213.321L738.999 576v853.321L923.767 1536zm184.768 0v213.321L1847.533 896l-738.998 426.642V1536l923.766-533.358v-213.32zm0 426.642v426.68L1478.034 896zM554.267 896l-369.536 213.321 369.536 213.321z" fill-rule="evenodd"></path></svg>
+                                            <span>Domains</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill="currentColor" d="M13.903 8c.06.629.097 1.292.097 2a1 1 0 01-2 0c0-.713-.039-1.378-.105-2H8.092c-.139 1.33-.14 2.67-.004 4H10a1 1 0 010 2H8.416c.469 2.08 1.202 3.41 1.585 4 0 0 .789.013.926.002a1.008 1.008 0 011.07.925 1 1 0 01-.924 1.07C10.979 20.004 10 20 10 20 4.486 20 0 15.514 0 10 0 4.485 4.486 0 10 0s10 4.485 10 10c0 .379-.036.749-.079 1.116a1.001 1.001 0 01-1.987-.233c.035-.291.066-.583.066-.883 0-.692-.098-1.36-.263-2h-3.834zM9.988 2.036c-.386.606-1.1 1.931-1.564 3.964h3.137c-.466-2.033-1.185-3.358-1.573-3.964zM2.263 12h3.819a21.604 21.604 0 01-.095-1.996c0-.67.033-1.338.096-2.004h-3.82A7.946 7.946 0 002 10a7.96 7.96 0 00.263 2zm.819 2a8.031 8.031 0 004.437 3.601A16.293 16.293 0 016.371 14H3.082zm3.291-8a16.235 16.235 0 011.15-3.603A8.03 8.03 0 003.082 6h3.291zm7.239 0h3.305a8.029 8.029 0 00-4.465-3.612A16.128 16.128 0 0113.612 6z"></path><path fill="currentColor" d="M15.223 18.945l-2.55-5.61a.5.5 0 01.662-.662l5.61 2.55a.5.5 0 01.017.903l-1.742.87a.5.5 0 00-.223.224l-.871 1.742a.5.5 0 01-.903-.017z"></path></svg>
+                                            <span>Usage</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                            <span>Settings</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="grid px-3 text-slate-500 space-y-4">
+                            <span class="text-sm text-slate-400 pt-4">Navigation</span>
+                            <nav>
+                                <ul class="space-y-2 px-1">
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2 border bg-slate-100 rounded-lg">P</span>
+                                            <span>Projects</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2 border bg-slate-100 rounded-lg">P</span>
+                                            <span>Protocol</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2 border bg-slate-100 rounded-lg">P</span>
+                                            <span>Tailwind Labs</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                    <header class="col-span-10 row-span-1  rounded-lg flex items-center border text-slate-800 justify-between w-full px-4">
+                        <form class="w-full">
+                            <div class="flex items-center relative w-full">
+                                <svg class="w-5 h-5 absolute left-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path></svg>
+                                <input type="search" name="search" id="search" placeholder="Search Projects..." class="py-1 px-10 flex-1 w-full max-w-xs border outline-none rounded-lg">
+                                <span class="text-slate-800 border border-slate-800 px-2 rounded-lg absolute left-96">/</span>
+                            </div>
+                        </form>
+                        <div class="flex items-center justify-end w-full gap-4">
+                            <a href="#" class="text-slate-50">
+                                <span>Documentaion</span>
+                            </a>
+                            <a href="#" class="text-slate-50">
+                                <span>Community</span>
+                            </a>
+                            <a href="#" class="text-slate-50">
+                                <span>Support</span>
+                            </a>
+                            <a href="#" class="text-slate-50 ">
+                                <div class="flex items-center gap-2 px-2 py-1 bg-blue-800 text-slate-50 rounded-lg">
+                                <span>+</span>
+                                <span>New Project</span>
+                                </div>
+                            </a>
+                        </div>
+                    </header>
+                    <section class="col-span-7 row-span-5 bg-slate-200 rounded-lg"></section>
+                    <aside class="col-span-3 row-span-5 bg-slate-400 rounded-lg"></aside>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

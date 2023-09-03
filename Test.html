@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="h-screen w-full flex flex-col items-center justify-center">
+        <form class="  relative">
+            <input type="text" id="name"
+                class="border-b-2 py-1 focus:border-purple-700 focus:outline-none focus:border-b-2 transition-colors peer"
+                autocomplete="off">
+            <label for="name"
+                class="absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:text-purple-600 peer-focus:-top-4 transition-all">Username</label>
+        </form>
+        <div class="flex justify-between group border-2 mt-12 w-full md:max-w-xl lg:max-w-none bg-slate-100">
+            <h2 class="group-hover:text-slate-400 transition-all duration-1000">Hey</h2>
+            <p class="group-hover:text-blue-600">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="flex pt-12 ">
+            <fieldset>
+                <input type="radio" id="draft" class="peer/draft peer-checked/draft:outline-2 " name="status" hidden>
+                <label for="draft" class="peer-checked/draft:text-white h-80 w-80  "><img src="/Image/Balloon.jpg"
+                        alt=""
+                        class="w-40 h-40 rounded-full peer-checked/draft:outline-2 peer-checked/draft:outline-red-400 peer-checked/draft:outline-offset-2"></label>
+
+                <input type="radio" id="peer2" class="peer/peer2" name="status" hidden>
+                <label for="peer2"
+                    class="peer-checked/peer2:text-white px-12 py-4 rounded-lg bg-purple-600 focus:outline-red-400 focus:outline-offset-2 ">XXL</label>
+
+                <img src="/Image/Balloon.jpg" alt="" class="w-10 h-10 hidden peer-checked/draft:block my-12">
+                <img src="/Image/Img1.jpg" alt="" class="w-10 h-10 hidden peer-checked/peer2:block my-12">
+            </fieldset>
+        </div>
+    </div>
+    <div class="flex items-center justify-center h-96 w-full ">
+        <div class="px-4 py-2 relative flex justify-between border-2 rounded-lg ">
+            <div class="px-1 peer flex justify-between w-40"></div>
+            <div class="peer-hover:bg-slate-500">
+                <button class="">Dropdown</button>
+
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480" fill="currentColor">
+                    <title>down</title>
+                    <path d="M250 360l180-180-30-30-150 150-160-150-30 30 190 180z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="absolute  px-1 py-2 top-10 left-0 border w-60 rounded-lg  invisible peer-hover:visible">
+            <ul class=" flex flex-col items-start w-full">
+                <a href="" class="peer"></a>
+                <li class="py-2 border-b w-full peer-hover:bg-slate-400"><a href="" class="">Home</a></li>
+                <li class="py-2 border-b w-full"><a href="">About</a></li>
+                <li class="py-2 border-b w-full"><a href="">Services</a></li>
+                <li class="py-2 border-b w-full"><a href="">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <button
+            class="peer px-5 py-2 rounded-lg mx-12 bg-green-600 hover:bg-green-700 text-white relative">Dropdown</button>
+
+        <!-- the menu here -->
+        <div class="hidden peer-hover:flex hover:flex absolute
+             w-[200px]
+             flex-col bg-white drop-shadow-lg">
+            <a class="px-5 py-3 hover:bg-gray-200" href="#">About Us</a>
+            <a class="px-5 py-3 hover:bg-gray-200" href="#">Contact Us</a>
+            <a class="px-5 py-3 hover:bg-gray-200" href="#">Privacy Policy</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="px-2 flex items-center justify-center border w-full h-screen">
+        <ul class="">
+
+            <li class="flex gap-8 w-full items-center pt-10">
+                <div class="w-5 h-5 rounded-full bg-slate-400"></div>
+                <div
+                    class="relative after:w-1 after:h-12 after:absolute after:top-2 after:-left-11 after:bg-slate-400 ">
+                </div>
+
+                <div>Chelsea Hagon created the invoice.</div>
+                <time>7d ago</time>
+            </li>
+            <li class="flex gap-8 w-full items-center pt-10">
+                <div class="w-5 h-5 rounded-full bg-slate-400"></div>
+                <div
+                    class="relative after:w-1 after:h-12 after:absolute after:top-2 after:-left-11 after:bg-slate-400 ">
+                </div>
+
+                <div>Chelsea Hagon created the invoice.</div>
+                <time>7d ago</time>
+            </li>
+            <li class="flex gap-8 w-full items-center pt-10">
+                <div class="w-5 h-5 rounded-full bg-slate-400"></div>
+                <div
+                    class="relative after:w-1 after:h-12 after:absolute after:top-2 after:-left-11 after:bg-slate-400 ">
+                </div>
+                <div>Chelsea Hagon created the invoice.</div>
+                <time>7d ago</time>
+            </li>
+            <li class="flex gap-8 w-full items-center pt-10">
+                <div class="w-5 h-5 rounded-full bg-slate-400"></div>
+                <div
+                    class="relative after:w-1 after:h-12 after:absolute after:top-2 after:-left-11 after:bg-slate-400 ">
+                </div>
+                <div>Chelsea Hagon created the invoice.</div>
+                <time>7d ago</time>
+            </li>
+        </ul>
+    </div>
+    <div class="px-1 flex justify-center items-center w-full">
+        <div class="w-20 h-10 rounded-full bg-blue-800 flex items-center justify-start px-2">
+            <!-- <div class="w-8 h-8 rounded-full bg-white peer"></div> -->
+            <input type="checkbox" id="check1" hidden class="peer/check1">
+            <label for="check1" class="peer-checked/check1:bg-slate-400 h-8 w-8 bg-slate-600 rounded-full peer-checked/
+            "></label>
+        </div>
+    </div>
+
+    <div class="px-4 py-6">
+        <div class="px-6 py-3 w-24 h-12 bg-blue-800 rounded-full relative">
+            <input type="radio" id="toggle" class="peer/toggle" hidden>
+            <label for="toggle"
+                class=" w-8 h-8  rounded-full bg-slate-100 absolute left-2 top-2 peer-hover/toggle:mx-12 peer-checked/toggle:visible"></label>
+            <!-- <input type="radio" id="toggle1" class="peer/toggle1" hidden>
+            <label for="toggle1" class=" w-8 h-8  rounded-full bg-slate-100 absolute left-2 top-2 peer-checked/toggle1:mx-0 peer-checked/toggle1:visible"></label> -->
+        </div>
+    </div>
+    <div class="px-4 py-6 h-80">
+        <div class=" px-4 py-6">
+            <input type="radio" id="drop" name="status" class="peer/drop absolute left-20 opacity-0 ">
+            <label for="drop"
+                class=" px-12 py-2 w-40 h-12 bg-blue-800 cursor-pointer flex justify-center items-center rounded-lg peer-focus/drop:text-slate-500 peer-focus/drop:border-purple-950 peer-focus/drop:border-2">
+                <div class="flex gap-4 text-white">
+                    <p>Dropdown</p>
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480" fill="currentColor">
+                        <title>down</title>
+                        <path d="M250 360l180-180-30-30-150 150-160-150-30 30 190 180z"></path>
+                    </svg>
+                </div>
+            </label>
+            <ul class="hidden peer-focus/drop:block border-2 rounded-lg w-40 my-2 ">
+                <li class="border px-2 py-1 hover:bg-slate-200 relative"><a href="#"
+                        class=" absolute inset-0 z-10"></a>Home</li>
+                <li class="border px-2 py-1 hover:bg-slate-200 relative"><a href="#"
+                        class=" absolute inset-0 z-10"></a>About</li>
+                <li class="border px-2 py-1 hover:bg-slate-200 relative"><a href="#"
+                        class=" absolute inset-0 z-10"></a>Services</li>
+                <li class="border px-2 py-1 hover:bg-slate-200 relative"><a href="#"
+                        class=" absolute inset-0 z-10"></a>Login</li>
+            </ul>
+        </div>
+    </div>
+    <div class="relative px-20 h-40 ">
+        <form class="s">
+
+            <input type="checkbox" id="check2" name="check2">
+            <label for="check2">Hey</label>
+            <input type="checkbox" id="check3">
+            <label for="check3">Bro</label>
+            <div class="flex items-center justify-center">
+                <div class="px-2 relative border">
+                    <input type="radio" name="status" id="check4" class="peer/check4" hidden>
+                    <label for="check4"
+                        class="px-4 py-2 w-20 absolute left-0 bg-slate-300 rounded-lg peer-checked/check4:text-white ring-offset-2 ring-2 peer-checked/check4:bg-blue-600">XL</label>
+                </div>
+                <div class="px-2 relative">
+                    <input type="radio" name="status" id="check5" class="peer/check5" hidden>
+                    <label for="check5"
+                        class="px-4 py-2 w-20 absolute left-20 bg-slate-300 rounded-lg peer-checked/check5:text-white ring-offset-2 ring-2 peer-checked/check5:bg-blue-600">XL</label>
+                </div>
+            </div>
+            <!-- <p class="flex justify-center items-center ">XL</p> -->
+        </form>
+    </div>
+    <div class="dropdown">
+        <div class="px-4 py-6 flex justify-center h-screen">
+            <form class="relative">
+                <input type="radio" id="radio1" class="peer/radio1 absolute left-1/2 top-4 opacity-0">
+                <label for="radio1"
+                    class="px-4 py-2 bg-slate-100 rounded-lg border flex w-72 items-center justify-center peer-focus/radio1:font-semibold peer-focus/radio1:ring-2 focus:outline-none  peer-focus/radio1:ring-violet-900">
+                    <div class="px-2 w-full flex items-center justify-between">
+                        <div class="person1 flex items-center">
+                            <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                            <div class="px-4">Spiderman</div>
+                        </div>
+                        <div class="px-1 -space-y-1">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M10.1025513,7.22165154 C13.549533,10.6902823 15.8466074,12.9862104 16.9937744,14.109436 C17.1906416,14.2940129 17.5317688,14.6698914 18.0392151,14.1790161 C18.3775126,13.851766 18.3644409,13.4939982 18,13.1057129 L10.556488,5.67610168 C10.432251,5.55870056 10.2805653,5.5 10.1014311,5.5 C9.92229687,5.5 9.76473264,5.55870056 9.6287384,5.67610168 L2.17555237,13.3108978 C1.93475791,13.6991321 1.94470649,14.025777 2.20539811,14.2908324 C2.46608974,14.5558878 2.78324382,14.5701396 3.15686035,14.3335876 L10.1025513,7.22165154 Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill="currentColor"
+                                    d="M10.1025513,12.7783485 L16.8106554,6.0794438 C17.0871744,5.80330401 17.5303978,5.80851813 17.8006227,6.09108986 C18.0708475,6.37366159 18.0657451,6.82658676 17.7892261,7.10272655 L10.5858152,14.2962587 C10.3114043,14.5702933 9.87226896,14.5675493 9.60115804,14.2901058 L2.2046872,6.72087106 C1.93149355,6.44129625 1.93181183,5.98834118 2.20539811,5.7091676 C2.47898439,5.42999401 2.92223711,5.43031926 3.19543076,5.70989407 L10.1025513,12.7783485 Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <div class="px-2 my-2 h-72 overflow-auto hidden peer-focus/radio1:block">
+                    <ul class="">
+                        <li>
+                            <p class="sticky top-0 border bg-slate-100 py-4">Marvels</p>
+                            <ul class="overflow-auto">
+
+
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-t-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Spiderman</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Iron Man</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Thor</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Captain America</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Hulk</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Hawkeye</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Black Widow</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="sticky top-0 border bg-slate-100 py-4">DC</p>
+                            <ul class="overflow-auto">
+
+
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Batman</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Flash</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Wonder Woman</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Deadpool</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Captain Marvel</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Black Adam</div>
+                                    </div>
+                                </li>
+                                <li class="py-2 border hover:bg-blue-800 hover:text-white rounded-b-lg">
+                                    <div class="person1 px-2 flex">
+                                        <img src="/Image/Balloon.jpg" alt="Person1" class=" w-8 h-8 rounded-full">
+                                        <div class="px-4">Cyborg</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <div class="px-4 py-6 flex">
+                <img src="/Image/Balloon.jpg" alt="User" class="w-8 h-8 rounded-full">
+                <div class="px-2">
+                    <textarea name="text" id="text" cols="50" rows="5" class="border-2 rounded-lg"></textarea>
+                    <div class="px-2 py-2 flex justify-between items-center">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" class="w-6 h-6 text-slate-400">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13">
+                                </path>
+                            </svg>
+                            <button class="w-6 h-6 text-slate-400" id="headlessui-listbox-button-2" type="button"
+                                aria-haspopup="listbox" aria-expanded="true" data-headlessui-state="open"
+                                aria-labelledby="headlessui-listbox-label-1 headlessui-listbox-button-2"
+                                aria-controls="headlessui-listbox-options-59"><span class="lx yz ze"><span><span
+                                            class="ajf lx og sj yz ze ads"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                                                class="nz sb up bah">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.536-4.464a.75.75 0 10-1.061-1.061 3.5 3.5 0 01-4.95 0 .75.75 0 00-1.06 1.06 5 5 0 007.07 0zM9 8.5c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S7.448 7 8 7s1 .672 1 1.5zm3 1.5c.552 0 1-.672 1-1.5S12.552 7 12 7s-1 .672-1 1.5.448 1.5 1 1.5z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg></span></span></span></button>
+
+                            <select name="smile" id="smile" class="list-none">
+                                <option class="list-none">
+                                    hey
+                                </option>
+                                <option class="list-none">
+                                    level1
+                                </option>
+                            </select>
+                        </div>
+                        <button class="px-2 py-1 bg-blue-800 text-white rounded-lg">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="px-4 py-6 h-screen w-full">
+        <div class=" py-6 border-2 h-full rounded-lg">
+             
+            
+            <div class="px-4 h-full">
+                <form class="h-full">
+                    <div class=" flex items-center gap-3 border-b">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                            </path>
+                        </svg>
+                        <input type="search" placeholder="Search..." class="text-lg">
+                    </div>
+                    <div class="grid grid-cols-2 py-2 w-full h-full">
+                        <!-- <input type="radio" id="userlist" class="peer/userlist">
+                        <label for="userlist" class="hidden peer-hover/userlist:block"></label> -->
+                        <div class="grid">
+                            <div class="w-full h-full border-r">
+                                <ul>
+                                    <li>
+
+
+                                        <div class=" px-1 pt-2 flex items-center w-full relative ">
+                                            <input type="radio" id="user1" class="peer/user1" hidden>
+                                            <label for="user1"
+                                                class="py-2 px-4 h-auto w-full flex items-center justify-between gap-2 rounded-lg hover:bg-slate-100">
+                                                <div class="flex">
+                                                    <img src="/Image/Balloon.jpg" alt="" class="w-6 h-6 rounded-full">
+                                                    <h2 class="px-1">Tom Cook</h2>
+                                                </div>
+                                            </label>
+                                            <div class="px-1 hidden peer-hover/user1:block relative">
+                                                <svg class="w-5 h-5   absolute -left-8 -top-2"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 480"
+                                                    fill="currentColor">
+                                                    <title>right</title>
+                                                    <path d="M290 250l-180-190-30 30 150 160-150 150 30 30 180-180z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="grid place-items-center invisible peer-hover/user1:visible absolute -right-full -top-2 w-full h-full">
+                                                <div class="border w-full grid place-items-center py-8">
+                                                    <img src="/Image/Balloon.jpg" alt="User1"
+                                                        class="w-20 h-20 rounded-full">
+                                                    <div class="py-2 grid place-items-center">
+                                                        <h2 class="font-semibold text-xl">Tom Cook</h2>
+                                                        <h3 class="text-slate-500 text-center">Director, Product
+                                                            Development</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="grid place-items-center max-w-lg w-full h-full py-8">
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>Phone</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <span>123-456-7890</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>URL</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <a href="#"
+                                                                class="text-blue-800 underline">https://www.google.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg">
+                                                        <h2>Email</h2>
+                                                        <div class="flex-1 max-w-sm">
+                                                            <a href="#"
+                                                                class="text-blue-800 flex-1 underline">tom_Cook@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="my-5 w-full text-center text-white py-3 bg-blue-800 rounded-lg">
+                                                        <a href="#" class="w-full max-w-lg ">Send Message</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="px-1 flex items-center w-full relative ">
+                                            <input type="radio" id="user2" class="peer/user2" hidden>
+                                            <label for="user2"
+                                                class="py-2 px-4 h-auto w-full flex items-center justify-between gap-2 rounded-lg hover:bg-slate-100">
+                                                <div class="flex">
+                                                    <img src="/Image/Img1.jpg" alt="" class="w-6 h-6 rounded-full">
+                                                    <h2 class="px-1">Courtney Henry</h2>
+                                                </div>
+                                            </label>
+                                            <div class="px-1 hidden peer-hover/user2:block relative">
+                                                <svg class="w-5 h-5   absolute -left-8 -top-2"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 480"
+                                                    fill="currentColor">
+                                                    <title>right</title>
+                                                    <path d="M290 250l-180-190-30 30 150 160-150 150 30 30 180-180z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="grid place-items-center invisible peer-hover/user2:visible absolute -right-full -top-14 w-full h-full">
+                                                <div class="border w-full grid place-items-center py-8">
+                                                    <img src="/Image/Img1.jpg" alt="User1"
+                                                        class="w-20 h-20 rounded-full">
+                                                    <div class="py-2 grid place-items-center">
+                                                        <h2 class="font-semibold text-xl">Courtney Henry</h2>
+                                                        <h3 class="text-slate-500 text-center">Designer</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="grid place-items-center max-w-lg w-full h-full py-8">
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>Phone</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <span>640-309-4790</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>URL</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <a href="#"
+                                                                class="text-blue-800 underline">https://www.google.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg">
+                                                        <h2>Email</h2>
+                                                        <div class="flex-1 max-w-sm">
+                                                            <a href="#"
+                                                                class="text-blue-800 flex-1 underline">courtneyhenry@example.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="my-5 w-full text-center text-white py-3 bg-blue-800 rounded-lg">
+                                                        <a href="#" class="w-full max-w-lg ">Send Message</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="px-1 flex items-center w-full relative ">
+                                            <input type="radio" id="user3" class="peer/user3" hidden>
+                                            <label for="user3"
+                                                class="py-2 px-4 h-auto w-full flex items-center justify-between gap-2 rounded-lg hover:bg-slate-100">
+                                                <div class="flex">
+                                                    <img src="/Image/Img2.jpg" alt="" class="w-6 h-6 rounded-full">
+                                                    <h2 class="px-1">Leonard Krasner</h2>
+                                                </div>
+                                            </label>
+                                            <div class="px-1 hidden peer-hover/user3:block relative">
+                                                <svg class="w-5 h-5   absolute -left-8 -top-2"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 480"
+                                                    fill="currentColor">
+                                                    <title>right</title>
+                                                    <path d="M290 250l-180-190-30 30 150 160-150 150 30 30 180-180z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="grid place-items-center invisible peer-hover/user3:visible absolute -right-full -top-24 w-full h-full">
+                                                <div class="border w-full grid place-items-center py-8">
+                                                    <img src="/Image/Img2.jpg" alt="User1"
+                                                        class="w-20 h-20 rounded-full">
+                                                    <div class="py-2 grid place-items-center">
+                                                        <h2 class="font-semibold text-xl">Leonard Krasner</h2>
+                                                        <h3 class="text-slate-500 text-center">Senior Designer</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="grid place-items-center max-w-lg w-full h-full py-8">
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>Phone</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <span>(515) 552-4223</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>URL</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <a href="#"
+                                                                class="text-blue-800 underline">https://www.google.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg">
+                                                        <h2>Email</h2>
+                                                        <div class="flex-1 max-w-sm">
+                                                            <a href="#"
+                                                                class="text-blue-800 flex-1 underline">leonard_krasner@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="my-5 w-full text-center text-white py-3 bg-blue-800 rounded-lg">
+                                                        <a href="#" class="w-full max-w-lg ">Send Message</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="px-1 flex items-center w-full relative ">
+                                            <input type="radio" id="user4" class="peer/user4" hidden>
+                                            <label for="user4"
+                                                class="py-2 px-4 h-auto w-full flex items-center justify-between gap-2 rounded-lg hover:bg-slate-100">
+                                                <div class="flex">
+                                                    <img src="/Image/Img3.jpg" alt="" class="w-6 h-6 rounded-full">
+                                                    <h2 class="px-1">Anna Roberts</h2>
+                                                </div>
+                                            </label>
+                                            <div class="px-1 hidden peer-hover/user4:block relative">
+                                                <svg class="w-5 h-5   absolute -left-8 -top-2"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 480"
+                                                    fill="currentColor">
+                                                    <title>right</title>
+                                                    <path d="M290 250l-180-190-30 30 150 160-150 150 30 30 180-180z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="grid place-items-center invisible peer-hover/user4:visible absolute -right-full -top-[136px] w-full h-full">
+                                                <div class="border w-full grid place-items-center py-8">
+                                                    <img src="/Image/Img3.jpg" alt="User1"
+                                                        class="w-20 h-20 rounded-full">
+                                                    <div class="py-2 grid place-items-center">
+                                                        <h2 class="font-semibold text-xl">Anna Roberts</h2>
+                                                        <h3 class="text-slate-500 text-center">Partner, Creative</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="grid place-items-center max-w-lg w-full h-full py-8">
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>Phone</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <span>123-456-7890</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg ">
+                                                        <h2>URL</h2>
+                                                        <div class="flex-1 max-w-sm ">
+                                                            <a href="#"
+                                                                class="text-blue-800 underline">https://www.google.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-4 flex justify-between py-1 w-full max-w-lg">
+                                                        <h2>Email</h2>
+                                                        <div class="flex-1 max-w-sm">
+                                                            <a href="#" class="text-blue-800 flex-1 underline">
+                                                                annaroberts@example.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="my-5 w-full text-center text-white py-3 bg-blue-800 rounded-lg">
+                                                        <a href="#" class="w-full max-w-lg ">Send Message</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <form>
+                <div class="py-10 w-full h-full">
+                    <label for="toogle1" class="px-14 py-4 relative bg-blue-800 rounded-full">
+                        <input type="checkbox" name="toogle1" id="toogle1" class="peer" hidden>
+                        <span class="w-9 h-9 absolute top-2 left-2 bg-slate-100 rounded-full peer-checked:left-16"> </span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="h-screen py-12 px-4 w-full relative">
+        <input type="checkbox" name="modal" id="modal" class="peer">
+        <label for="modal" class="w-10 h-10 absolute bg-slate-200 rounded-full"></label>
+        <div class="bg-black/50 fixed inset-0 hidden peer-checked:flex items-center justify-center">
+            <div class="bg-white rounded-md max-w-2xl w-full">
+                <div class="py-3 px-4 border-b border-gray-200">
+                    <h2 class="font-semibold text-lg">Size Chart</h2>
+                </div>
+                <div class="p-4">
+                    <table class="w-full text-left">
+                        <tr class="bg-gray-100">
+                            <th class="py-2 px-3">djfkdj</th>
+                            <th class="py-2 px-3">djfkdj</th>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="py-2 px-3">sdfsd</td>
+                            <td class="py-2 px-3">sdfsd</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="py-2 px-3">sdfsd</td>
+                            <td class="py-2 px-3">sdfsd</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="h-screen w-full relative">
+        <div class="px-4 w-full h-full bg-black/50 "></div>
+    </div> -->
+    <div class="h-screen w-full relative">
+        <div class="px-4 py-6 bg-black/50 h-full w-full  inset-0 flex justify-center items-center">
+            <div class="px-4 py-5 border rounded-lg bg-white">
+                <div class="border-2 rounded-lg  h-full">
+                <h2 class="border-b bg-slate-100 h-16 px-2 py-4 font-bold text-xl">Page Size</h2>
+                <div class="flex items-center justify-center h-auto w-full px-4 py-6 max-w-xl">
+                    <img src="/Image/Balloon.jpg" alt="Product" class="w-20 h-16 rounded-lg">
+                    <div class="grid px-4">
+                    <h3 class="font-semibold text-lg">View Product</h3>
+                    <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, sunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, eveniet.</p>
+                    </div>
+                    <div class="flex gap-2 border border-slate-200 px-1 rounded-lg bg-green-50 text-green-900">
+                    <h3 class="">Badge</h3>
+                    <span class="text-slate-400">x</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex relative">
+            <img src="/Image/Balloon.jpg" alt="" class="w-16 h-16 rounded-full border-2 border-white">
+            <span class="w-5 h-5 bg-green-600 rounded-full border-4 border-white absolute top-1 left-11"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
