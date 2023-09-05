@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-full h-full px-6 py-8">
+        <header class="w-full h-full flex items-center justify-between">
+            <div class="px-2">
+                <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512"
+                    fill="currentColor">
+                    <path
+                        d="M128,204.6666718C145.0624084,136.2265015,187.7375946,102,256,102c102.3999939,0,115.2000122,77,166.3999939,89.8333282c34.1376038,8.5598297,64-4.2734985,89.6000061-38.5C494.9375916,221.7734985,452.2623901,256,384,256c-102.3999939,0-115.2000122-77-166.3999939-89.8333282C183.4624023,157.606842,153.6000061,170.4401703,128,204.6666718z M0,358.6666565C17.0623989,290.2265015,59.7375984,256,128,256c102.3999939,0,115.1999969,77,166.3999939,89.8333435c34.1376038,8.5598145,64-4.2734985,89.6000061-38.5C366.9375916,375.7734985,324.2623901,410,256,410c-102.3999939,0-115.1999969-77-166.3999939-89.8333435C55.4624023,311.606842,25.6000004,324.440155,0,358.6666565z">
+                    </path>
+                </svg>
+            </div>
+            <nav>
+                <ul class="flex gap-10 font-bold">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Login</li>
+                </ul>
+            </nav>
+            <div class="px-2">
+                <a href="#" class="flex font-bold text-lg">
+                    <span>Login</span>
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none"
+                        viewBox="0 0 24 24">
+                        <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="w-full h-full px-6 py-8 flex items-center justify-center flex-col">
+                <div class="flex items-center justify-center flex-col space-y-5 py-10">
+                    <h1 class="font-bold text-5xl">Simple pricing, no commitment</h1>
+                    <p class="text-xl text-slate-500 w-full max-w-2xl items-center">Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum
+                        quos odit doloribus.</p>
+                </div>
+                <div class="w-full h-full"></div>
+                <form class="w-full h-full flex flex-col items-center justify-center">
+                    
+                    <input type="radio" name="radio1" id="radio1" class="peer" >
+                    <input type="radio" name="radio1" id="radio2" class="peer/radio2">
+                    <label for="radio1" class="px-2 py-1 bg-indigo-800 rounded-full text-white peer-checked:bg-slate-50">Monthly</label>
+                    <!-- <div class="flex bg-transparent border-2 rounded-full py-2 px-2"> -->
+                    <label for="radio2" class="px-2 py-1 bg-indigo-800 rounded-full text-white">Monthly</label>
+                    
+                    <!-- </div> -->
+                    <article class="w-full h-full px-4 py-8 bg-black text-white flex peer-checked:hidden peer-checked:bg-slate-500">
+                        <article class="px-6 py-8 text-slate-500 border rounded-2xl w-full space-y-8">
+                            <div class="px-2 space-y-1">
+                                <h3 class="font-bold text-white">Starter</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-5xl font-bold text-white">$144</span>
+                                    <div class="px-2 flex flex-col">
+                                        <span class="text-white font-medium">USD</span>
+                                        <span>Billed annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="py-2 border text-white w-full rounded-lg px-4 text-center bg-slate-900">
+                            <a href="#" class="w-full "><span>Buy this plan</span></a>
+                            </div>
+                            <ul>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Basic invoicing</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Easy to use accounting</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Mutli-accounts</span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="px-6 py-8 border rounded-2xl w-full space-y-8 bg-white text-black scale-y-125">
+                            <div class="px-2 space-y-1">
+                                <h3 class="font-bold text-black">Starter</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-5xl font-bold text-black">$144</span>
+                                    <div class="px-2 flex flex-col">
+                                        <span class="text-black font-medium">USD</span>
+                                        <span>Billed annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="py-2 border text-white w-full rounded-lg px-4 text-center bg-slate-900">
+                            <a href="#" class="w-full "><span>Buy this plan</span></a>
+                            </div>
+                            <ul>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Basic invoicing</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Easy to use accounting</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Mutli-accounts</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Mutli-accounts</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Mutli-accounts</span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="px-6 py-8 text-slate-500 border rounded-2xl w-full space-y-8">
+                            <div class="px-2 space-y-1">
+                                <h3 class="font-bold text-white">Starter</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-5xl font-bold text-white">$144</span>
+                                    <div class="px-2 flex flex-col">
+                                        <span class="text-white font-medium">USD</span>
+                                        <span>Billed annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="py-2 border text-white w-full rounded-lg px-4 text-center bg-slate-900">
+                            <a href="#" class="w-full "><span>Buy this plan</span></a>
+                            </div>
+                            <ul>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Basic invoicing</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Easy to use accounting</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Mutli-accounts</span>
+                                </li>
+                            </ul>
+                        </article>
+                    </article>
+                    <article class="w-full h-full px-4 py-8 bg-black text-white hidden peer-checked/radio2:flex peer-checked/radio2:bg-slate-500">
+                        <article class="px-6 py-8 text-slate-500 border rounded-2xl w-full space-y-8">
+                            <div class="px-2 space-y-1">
+                                <h3 class="font-bold text-white">Starter</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-5xl font-bold text-white">$144</span>
+                                    <div class="px-2 flex flex-col">
+                                        <span class="text-white font-medium">USD</span>
+                                        <span>Billed annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="py-2 border text-white w-full rounded-lg px-4 text-center bg-slate-900">
+                            <a href="#" class="w-full "><span>Buy this plan</span></a>
+                            </div>
+                            <ul>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Basic invoicing</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Easy to use accounting</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Mutli-accounts</span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="px-6 py-8 border rounded-2xl w-full space-y-8 bg-white text-black scale-y-125">
+                            <div class="px-2 space-y-1">
+                                <h3 class="font-bold text-black">Starter</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-5xl font-bold text-black">$1004</span>
+                                    <div class="px-2 flex flex-col">
+                                        <span class="text-black font-medium">USD</span>
+                                        <span>Billed annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="py-2 border text-white w-full rounded-lg px-4 text-center bg-slate-900">
+                            <a href="#" class="w-full "><span>Buy this plan</span></a>
+                            </div>
+                            <ul>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Basic invoicing</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Easy to use accounting</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Mutli-accounts</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Mutli-accounts</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-slate-600">Mutli-accounts</span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="px-6 py-8 text-slate-500 border rounded-2xl w-full space-y-8">
+                            <div class="px-2 space-y-1">
+                                <h3 class="font-bold text-white">Starter</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-5xl font-bold text-white">$144</span>
+                                    <div class="px-2 flex flex-col">
+                                        <span class="text-white font-medium">USD</span>
+                                        <span>Billed annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="py-2 border text-white w-full rounded-lg px-4 text-center bg-slate-900">
+                            <a href="#" class="w-full "><span>Buy this plan</span></a>
+                            </div>
+                            <ul>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Basic invoicing</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Easy to use accounting</span>
+                                </li>
+                                <li class="py-2 border-b border-slate-600 flex items-center gap-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span class="text-lg text-white">Mutli-accounts</span>
+                                </li>
+                            </ul>
+                        </article>
+                    </article>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
