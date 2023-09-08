@@ -18,7 +18,7 @@
             <ul class="flex items-center gap-10">
                 <li>Home</li>
                 <li>Features</li>
-                <li >
+                <li>
                     <div class="flex gap-2 items-center relative w-full">
                         <span class="peer">Pages</span>
                         <svg class="w-6 h-6 peer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480"
@@ -41,7 +41,7 @@
         </nav>
         <div class="flex items-center gap-4 sm:hidden md:hidden lg:flex xl:flex">
             <a href="#" class="px-5 py-2 bg-indigo-600 text-white rounded-lg">Sign In</a>
-            <a href="#" class="px-5 py-2 bg-slate-800 text-white rounded-lg">Sign In</a>
+            <a href="#" class="px-5 py-2 bg-slate-800 text-white rounded-lg">Sign Up</a>
             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -97,15 +97,16 @@
             </div>
 
             <div class="flex-1  w-full h-full">
-                <div class="flex justify-center w-full h-full relative">
-                    <div class="w-4/5 h-4/5">
+                <div class="flex items-center justify-center w-full h-full relative">
+                    <div class="w-4/5 h-4/5 sm:w-2/3 sm:h-1/3 lg:w-4/5 lg:h-4/5 sm:pt-24 lg:pt-0">
                         <img src="https://go-tailwind.preview.uideck.com/src/images/hero/image-2.jpg" alt="hero-image"
                             class="w-full h-full object-cover">
                     </div>
-                    <div class="w-80 h-96 absolute left-0 -bottom-10">
+                    <div class="w-80 h-96 absolute left-0 -bottom-10 z-10 sm:left-20 lg:left-2">
                         <img src="https://go-tailwind.preview.uideck.com/src/images/hero/image-1.jpg" alt="Img1"
                             class="w-full h-full object-cover ">
                     </div>
+                    <div class="absolute w-80 h-96 left-6 backdrop-blur-xl -bottom-4 bg-slate-100/5 z-0 sm:left-24 lg:left-8"></div>
                 </div>
             </div>
         </section>
@@ -224,12 +225,13 @@
         <section class="w-full h-full flex items-center justify-center flex-col py-20 bg-slate-950 ">
             <div class="flex flex-col items-center justify-center w-full h-full space-y-8">
                 <div class="py-2">
-                <h2
-                    class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent">
-                    About Us</h2>
-                <h3 class="text-5xl font-bold w-full max-w-xl text-center">Know Details About Our Company</h3>
+                    <h2
+                        class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent">
+                        About Us</h2>
+                    <h3 class="text-5xl font-bold w-full max-w-xl text-center">Know Details About Our Company</h3>
                 </div>
-                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                     In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
             </div>
             <ul class="py-12 w-full flex max-w-5xl">
@@ -237,14 +239,15 @@
                 <li class="w-full border-b py-8 font-bold text-lg text-center hover:border-blue-600">About Us</li>
                 <li class="w-full border-b py-8 font-bold text-lg text-center hover:border-blue-600">About Us</li>
             </ul>
-            <section class="w-full h-full  max-w-5xl px-2  flex items-center justify-center gap-2 sm:block md:block lg:flex">
-                
-    
+            <section
+                class="w-full h-full  max-w-5xl px-2  flex items-center justify-center gap-2 sm:block md:block lg:flex">
+
+
                 <div class="flex-1  w-full h-full">
                     <div class="flex justify-center w-full h-full relative">
                         <div class="w-4/5 h-96">
-                            <img src="https://go-tailwind.preview.uideck.com/src/images/about/image-1.jpg" alt="hero-image"
-                                class="w-full h-full object-cover">
+                            <img src="https://go-tailwind.preview.uideck.com/src/images/about/image-1.jpg"
+                                alt="hero-image" class="w-full h-full object-cover">
                         </div>
                         <div class="w-80 h-96 absolute right-6 top-20">
                             <img src="https://go-tailwind.preview.uideck.com/src/images/about/image-2.jpg" alt="Img1"
@@ -254,13 +257,17 @@
                 </div>
 
                 <div class="flex-1  w-full h-full px-2 py-10">
-                    <div class="flex flex-col items-start justify-center w-full h-full space-y-10 max-w-lg sm:py-32 md:py-32 lg:py-2 sm:items-center md:items-center lg:items-start">
-                        
+                    <div
+                        class="flex flex-col items-start justify-center w-full h-full space-y-10 max-w-lg sm:py-32 md:py-32 lg:py-2 sm:items-center md:items-center lg:items-start">
+
                         <h2 class="text-5xl font-bold">We are Creative Digital Agency Based in USA</h2>
                         <div class="py-2 space-y-6 text-slate-400 text-lg">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum sapien ac leo cursus dignissim. In ac lectus vel orci accumsan ultricies at in libero accumsan.</p>
-                        <p>Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.</p>
-                        <p>Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum sapien ac leo
+                                cursus dignissim. In ac lectus vel orci accumsan ultricies at in libero accumsan.</p>
+                            <p>Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis nulla. Integer vitae
+                                magna lacus. Sed venenatis auctor dolor.</p>
+                            <p>Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis nulla. Integer vitae
+                                magna lacus. Sed venenatis auctor dolor.</p>
                         </div>
                     </div>
                 </div>
@@ -271,95 +278,129 @@
         <section class="w-full h-full flex items-center justify-center flex-col  bg-slate-900 py-20">
             <div class="flex flex-col items-center justify-center w-full h-full space-y-8">
                 <div class="py-2">
-                <h2
-                    class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent text-center">
-                    Our Team</h2>
-                <h3 class="text-5xl font-bold w-full max-w-xl text-center">Know Details About Our Company</h3>
+                    <h2
+                        class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent text-center">
+                        Our Team</h2>
+                    <h3 class="text-5xl font-bold w-full max-w-xl text-center">Know Details About Our Company</h3>
                 </div>
-                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                     In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
             </div>
 
             <div class="w-full h-full flex items-center justify-center max-w-4xl py-20 sm:block md:block lg:flex">
                 <article class="w-full h-full flex items-center justify-center flex-col space-y-3">
                     <div class="w-64 h-full rounded-lg relative">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/team/image-3.jpg" alt="Img2" class="w-full h-full object-cover rounded-lg peer">
-                    <div class="invisible peer-hover:visible transition-all absolute bottom-12 flex items-center justify-center w-full gap-2">
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        
-                    </div>
+                        <img src="https://go-tailwind.preview.uideck.com/src/images/team/image-3.jpg" alt="Img2"
+                            class="w-full h-full object-cover rounded-lg peer">
+                        <div
+                            class="invisible peer-hover:visible transition-all absolute bottom-12 flex items-center justify-center w-full gap-2">
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="py-2 text-center">
-                    <h3 class="font-bold text-2xl">Avi Pestarica</h3>
-                    <span class="text-slate-400 text-lg">Web Designer</span>
+                        <h3 class="font-bold text-2xl">Avi Pestarica</h3>
+                        <span class="text-slate-400 text-lg">Web Designer</span>
                     </div>
                 </article>
                 <article class="w-full h-full flex items-center justify-center flex-col space-y-3">
                     <div class="w-64 h-full rounded-lg relative">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/team/image-3.jpg" alt="Img2" class="w-full h-full object-cover rounded-lg peer">
-                    <div class="invisible peer-hover:visible transition-all absolute bottom-12 flex items-center justify-center w-full gap-2">
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        
-                    </div>
+                        <img src="https://go-tailwind.preview.uideck.com/src/images/team/image-3.jpg" alt="Img2"
+                            class="w-full h-full object-cover rounded-lg peer">
+                        <div
+                            class="invisible peer-hover:visible transition-all absolute bottom-12 flex items-center justify-center w-full gap-2">
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="py-2 text-center">
-                    <h3 class="font-bold text-2xl">Avi Pestarica</h3>
-                    <span class="text-slate-400 text-lg">Web Designer</span>
+                        <h3 class="font-bold text-2xl">Avi Pestarica</h3>
+                        <span class="text-slate-400 text-lg">Web Designer</span>
                     </div>
                 </article>
                 <article class="w-full h-full flex items-center justify-center flex-col space-y-3">
                     <div class="w-64 h-full rounded-lg relative">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/team/image-3.jpg" alt="Img2" class="w-full h-full object-cover rounded-lg peer">
-                    <div class="invisible peer-hover:visible transition-all absolute bottom-12 flex items-center justify-center w-full gap-2">
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        <div class="p-3 bg-white/50 rounded-full">
-                        <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                          </svg>
-                          </div>
-                        
-                    </div>
+                        <img src="https://go-tailwind.preview.uideck.com/src/images/team/image-3.jpg" alt="Img2"
+                            class="w-full h-full object-cover rounded-lg peer">
+                        <div
+                            class="invisible peer-hover:visible transition-all absolute bottom-12 flex items-center justify-center w-full gap-2">
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="p-3 bg-white/50 rounded-full">
+                                <svg class="w-6 h-6 bg-slate-200 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="py-2 text-center">
-                    <h3 class="font-bold text-2xl">Avi Pestarica</h3>
-                    <span class="text-slate-400 text-lg">Web Designer</span>
+                        <h3 class="font-bold text-2xl">Avi Pestarica</h3>
+                        <span class="text-slate-400 text-lg">Web Designer</span>
                     </div>
                 </article>
             </div>
@@ -369,12 +410,13 @@
         <section class="w-full h-full flex items-center justify-center flex-col  bg-slate-950 py-20 space-y-16">
             <div class="flex flex-col items-center justify-center w-full h-full space-y-8">
                 <div class="py-2">
-                <h2
-                    class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent">
-                    Portfolio</h2>
-                <h3 class="text-5xl font-bold w-full max-w-xl text-center">Explore Our Latest Case Studies</h3>
+                    <h2
+                        class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent">
+                        Portfolio</h2>
+                    <h3 class="text-5xl font-bold w-full max-w-xl text-center">Explore Our Latest Case Studies</h3>
                 </div>
-                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                     In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
             </div>
 
@@ -384,18 +426,23 @@
                 <li><a href="#" class="font-semibold ">Digital Experiences</a></li>
                 <li><a href="#" class="font-semibold ">eCommerce</a></li>
             </ul>
-            <div class="grid grid-rows-2 grid-cols-3 gap-8 w-full h-full px-24 sm:block lg:grid sm:space-y-10">
+            <div
+                class="grid grid-rows-2 grid-cols-3 gap-8 w-full h-full px-24 sm:block lg:grid sm:space-y-10 lg:space-y-0">
                 <div class="row-span-1 col-span-2 bg-slate-200 rounded-xl w-full">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-1.jpg" alt="Img4" class="w-full h-full object-cover rounded-xl">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-1.jpg" alt="Img4"
+                        class="w-full h-full object-cover rounded-xl">
                 </div>
                 <div class="row-span-2 col-span-1 bg-slate-200 rounded-xl">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-2.jpg" alt="Img4" class="w-full h-full object-cover rounded-xl">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-2.jpg" alt="Img4"
+                        class="w-full h-full object-cover rounded-xl">
                 </div>
                 <div class="row-span-1 col-span-1 bg-slate-200 rounded-xl">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-3.jpg" alt="Img4" class="w-full h-full object-cover rounded-xl">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-3.jpg" alt="Img4"
+                        class="w-full h-full object-cover rounded-xl">
                 </div>
                 <div class="row-span-1 col-span-1 bg-slate-200 rounded-xl">
-                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-4.jpg" alt="Img4" class="w-full h-full object-cover rounded-xl">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/portfolio/image-4.jpg" alt="Img4"
+                        class="w-full h-full object-cover rounded-xl">
                 </div>
             </div>
             <div class="flex items-center px-8 py-4 gap-3 bg-indigo-600 text-white rounded-lg relative ">
@@ -403,13 +450,375 @@
                 <span>See More Projects</span>
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none"
                     viewBox="0 0 24 24">
-                    <path
-                        d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                    <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
                     </path>
                 </svg>
-                
             </div>
-            </section>
+        </section>
+
+        <!-- Testimonials -->
+        <section
+            class="w-full h-full flex items-center justify-center flex-col  bg-slate-950 py-20 space-y-16 border-b border-slate-400">
+            <div class="flex flex-col items-center justify-center w-full h-full space-y-8">
+                <div class="py-2">
+                    <h2
+                        class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent">
+                        Tetimonials</h2>
+                    <h3 class="text-5xl font-bold w-full max-w-xl text-center">What Our Clients Say About Us</h3>
+                </div>
+                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+                    maximus.</p>
+            </div>
+
+            <article class="w-full h-full px-4 py-8 text-slate-500 max-w-5xl flex items-center justify-center sm:block lg:flex">
+                <div class="flex-1 space-y-7 py-10">
+                    <div class="flex items-center justify-center">
+                    <div class="flex flex-col items-start justify-start space-y-6">
+                    <blockquote class="text-2xl max-w-sm sm:max-w-xl lg:max-w-sm"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce
+                            condimentum sapien ac leo cursus dignissim. In ac lectus vel orci accumsan ultricies at in
+                            libero accumsan Lorem Ipsum has been the industry's standard</q></blockquote>
+                    <div class="">
+                        <h2 class="text-white font-bold text-xl">Deniyal Shifer</h2>
+                        <span>Founder @democompany</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="p-2 border rounded-full bg-white/80 ">
+                            <svg class="w-6 h-6 text-slate-800" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                stroke="none" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="p-2 border rounded-full bg-white/80 ">
+                            <svg class="w-6 h-6 text-slate-800" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                stroke="none" viewBox="0 0 24 24">
+                                <path
+                                    d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center justify-center">
+                    <div class="w-96 h-full relative sm:w-4/5 lg:w-96">
+                        <div class="w-full h-full bg-blue-600 -z-10 absolute left-10 -top-8 "></div>
+                        <img src="https://go-tailwind.preview.uideck.com/src/images/testimonial/image-1.jpg" alt="Img5"
+                            class="w-full h-full object-cover ">
+                    </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                <div class="py-2">
+
+                    <h2 class="text-3xl font-bold w-full max-w-xl text-center">Trusted by Global Brands</h2>
+                </div>
+                <p class="w-full max-w-2xl text-lg text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+                    maximus.</p>
+            </div>
+
+            
+            <div class="flex items-center justify-center max-w-5xl gap-4 sm:max-w-4xl md:max-w-7xl flex-wrap">
+                <div class="p-2 w-32 h-1/4 max-w-xs ">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/brands/uideck.svg" alt="Img6"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 w-40 h-1/3 max-w-xs ">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/brands/ayroui.svg" alt="Img6"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 w-44 h-1/2 max-w-xs ">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/brands/graygrids.svg" alt="Img6"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 w-44 h-1/2 max-w-xs ">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/brands/lineicons.svg" alt="Img6"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-2 w-44 h-1/2 max-w-xs ">
+                    <img src="https://go-tailwind.preview.uideck.com/src/images/brands/plainadmin.svg" alt="Img6"
+                        class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pricing Plans -->
+        <section
+            class="w-full h-full flex items-center justify-center flex-col  bg-slate-950 py-20 space-y-16 border-b-2">
+            <div class="flex flex-col items-center justify-center w-full h-full space-y-8">
+                <div class="py-2 flex items-center justify-center flex-col">
+                    <h2
+                        class="text-8xl font-bold text-slate-600 opacity-20 bg-gradient-to-t from-slate-900 via-slate-800 to-transparent">
+                        PRICING PLANS</h2>
+                    <h3 class="text-5xl font-bold w-full max-w-xl text-center">Affordable Pricing With Simple Plans</h3>
+                </div>
+                <p class="w-full max-w-2xl text-xl text-center text-slate-400">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+                    maximus.</p>
+            </div>
+            <div class="flex items-center justify-center border-b border-slate-500 w-full h-full max-w-5xl">
+                <article class="flex flex-col items-center text-slate-500 w-full max-w-sm h-full  border-slate-500 space-y-4">
+                    <div class="p-8 max-w-xs">
+                        <h2 class="text-3xl text-center font-bold text-white pb-1">Basic</h2>
+                        <span class="text-lg">The most popular plan</span>
+                    </div>
+                    <div class="p-6 text-center border-y border-slate-500 w-full">
+                        <div class="text-white font-medium pb-2 flex items-end justify-center">
+                            <div class="flex items-center">
+                                <span class="font-bold">$</span><span class="text-5xl font-bold">29</span>
+                            </div>
+                            <span> /month</span>
+                        </div>
+                        <span class="px-4 max-w-xs text-lg text-center">Lorem ipsum dolor sit ametion consectetur adipisc elit.</span>
+                    </div>
+                    <div class="space-y-4 py-8 pb-12">
+                    <div class="py-3">
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-8 py-4 gap-3 bg-indigo-600 text-white rounded-lg relative ">
+                        <a href="#" class="absolute z-10 inset-0"></a>
+                        <span class="text-lg">Join This Plan</span>
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none"
+                            viewBox="0 0 24 24">
+                            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </div>
+                    </div>
+                </article>
+                <article class="flex flex-col items-center text-slate-500 w-full max-w-sm h-full border-x border-slate-500 space-y-4">
+                    <div class="p-8 max-w-xs">
+                        <h2 class="text-3xl text-center font-bold text-white pb-1">Basic</h2>
+                        <span class="text-lg">The most popular plan</span>
+                    </div>
+                    <div class="p-6 text-center border border-slate-500 w-full">
+                        <div class="text-white font-medium pb-2 flex items-end justify-center">
+                            <div class="flex items-center">
+                                <span class="font-bold">$</span><span class="text-5xl font-bold">29</span>
+                            </div>
+                            <span> /month</span>
+                        </div>
+                        <span class="px-4 max-w-xs text-lg text-center">Lorem ipsum dolor sit ametion consectetur adipisc elit.</span>
+                    </div>
+                    <div class="space-y-4 py-8 pb-12">
+                    <div class="py-3">
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-8 py-4 gap-3 bg-indigo-600 text-white rounded-lg relative ">
+                        <a href="#" class="absolute z-10 inset-0"></a>
+                        <span class="text-lg">Join This Plan</span>
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none"
+                            viewBox="0 0 24 24">
+                            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </div>
+                    </div>
+                </article>
+                <article class="flex flex-col items-center text-slate-500 w-full max-w-sm h-full  border-slate-500 space-y-4">
+                    <div class="p-8 max-w-xs">
+                        <h2 class="text-3xl text-center font-bold text-white pb-1">Basic</h2>
+                        <span class="text-lg">The most popular plan</span>
+                    </div>
+                    <div class="p-6 text-center border-y border-slate-500 w-full">
+                        <div class="text-white font-medium pb-2 flex items-end justify-center">
+                            <div class="flex items-center">
+                                <span class="font-bold">$</span><span class="text-5xl font-bold">29</span>
+                            </div>
+                            <span> /month</span>
+                        </div>
+                        <span class="px-4 max-w-xs text-lg text-center">Lorem ipsum dolor sit ametion consectetur adipisc elit.</span>
+                    </div>
+                    <div class="space-y-4 py-8 pb-12">
+                    <div class="py-3">
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                        <div class="flex gap-2 py-2">
+                            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z" fill="currentColor"></path></svg>
+                            <span>300 GB Storage</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-8 py-4 gap-3 bg-indigo-600 text-white rounded-lg relative ">
+                        <a href="#" class="absolute z-10 inset-0"></a>
+                        <span class="text-lg">Join This Plan</span>
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none"
+                            viewBox="0 0 24 24">
+                            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <footer class="w-full h-full px-8 py-10 max-w-7xl">
+            
+                <div class=" w-full h-full flex flex-wrap max-w-7xl gap-2">
+                    <div class=" space-y-8 border">
+                        <div class="w-52 h-10">
+                            <img src="https://go-tailwind.preview.uideck.com/src/images/logo/logo-dark.svg" alt="Logo" class="w-full h-full object-cover">
+                        </div>
+                        <p class="max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex gap-3">
+                            <svg class="w-6 h-6 text-slate-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                              </svg>
+                              <svg class="w-6 h-6 text-slate-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill-rule="nonzero" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+                                </g>
+                            </svg>
+                            <svg class="w-6 h-6 text-slate-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                              </svg>
+                              <svg class="w-6 h-6 text-slate-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="flex w-full gap-4">
+                        <div class="space-y-8 flex-1 border">
+                            <span class="font-bold text-2xl text-white">Company</span>
+                            <ul class="space-y-4 text-lg">
+                                <li>Home</li>
+                                <li>Home</li>
+                                <li>
+                                    <span>Home</span>
+                                    <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded-lg">Hiring</span>
+                                </li>
+                                <li>Home</li>
+                            </ul>
+                        </div>
+                    
+                    
+                        <div class="space-y-8 flex-1 border">
+                            <span class="font-bold text-2xl text-white">Company</span>
+                            <ul class="space-y-4 text-lg">
+                                <li>Home</li>
+                                <li>Home</li>
+                                <li>
+                                    <span>Home</span>
+                                    <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded-lg">Hiring</span>
+                                </li>
+                                <li>Home</li>
+                            </ul>
+                        </div>
+                    
+                   
+                        <div class="space-y-8 flex-1 border">
+                            <span class="font-bold text-2xl text-white">Company</span>
+                            <ul class="space-y-4 text-lg">
+                                <li>Home</li>
+                                <li>Home</li>
+                                <li>
+                                    <span>Home</span>
+                                    <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded-lg">Hiring</span>
+                                </li>
+                                <li>Home</li>
+                            </ul>
+                        </div>
+                    
+                    <div class="space-y-8 flex-1 border">
+                        <span class="font-bold text-2xl text-white">Newsletter</span>
+                        <form class="space-y-4">
+                            <label for="email" class="text-xl">Subscribe to receive future updates</label>
+                            <div class="px-2 relative">
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="pl-8 py-2 w-full">
+                            <div class="absolute top-2 right-4">
+                            <svg class="w-6 h-6 text-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M0 0l20 10L0 20V0zm0 8v4l10-2L0 8z"></path></svg>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                
+                <!-- <nav class=" max-w-6xl border grid  w-full h-full">
+                    <ul class="grid-cols-5 w-full sm:">
+                        <li>
+                        
+                        </li>
+                        
+                        <li class="space-y-8 w-full border">
+                            <span class="font-bold text-2xl text-white">Company</span>
+                            <ul class="space-y-4 text-lg">
+                                <li>Home</li>
+                                <li>Home</li>
+                                <li>
+                                    <span>Home</span>
+                                    <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded-lg">Hiring</span>
+                                </li>
+                                <li>Home</li>
+                            </ul>
+                        </li>
+                        <li class="space-y-8 w-full  border">
+                            <span class="font-bold text-2xl text-white">Company</span>
+                            <ul class="space-y-4 text-lg">
+                                <li>Home</li>
+                                <li>Home</li>
+                                <li>
+                                    <span>Home</span>
+                                    <span class="px-2 py-1 text-sm bg-blue-600 text-white rounded-lg">Hiring</span>
+                                </li>
+                                <li>Home</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav> -->
+        </footer>
     </main>
 </body>
 
